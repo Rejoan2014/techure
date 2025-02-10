@@ -116,7 +116,7 @@
   left: 0;
   width: 100%;
   z-index: 150;
-  background-color: $white;
+  background-color: $header-color;
   border-bottom: 1px solid rgba(255, 255, 255, 0.20);
 
   @include breakpoint (max-xl) {
@@ -167,6 +167,9 @@
             -o-transition: 0.4s;
             z-index: 5;
           }
+          i {
+            font-size: 12px;
+          }
 
           &:hover {
             &:before {
@@ -185,14 +188,13 @@
   a {
     display: block;
     position: relative;
-    color: $title-color;
-    font-family: $title-font;
-    font-size: 16px;
+    color: var(--Gray-900, #031F42);
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: "DM Sans";
+    font-size: 18px;
     font-style: normal;
-    font-weight: 600;
-    line-height: 20px;
-    letter-spacing: -0.32px;
-    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 20px; /* 111.111% */
 
     &:hover,
     &.active {
@@ -204,7 +206,7 @@
     margin: 0 15px;
 
     &>a {
-      padding: 40px 0;
+      padding: 35px 0;
 
       &:hover {
         color: $theme-color;
@@ -556,7 +558,7 @@
 
 @include breakpoint (max-xl4) {
   .main-menu>ul>li {
-    margin: 0 13px;
+    margin: 0 10px;
   }
   .main-menu2>ul>li {
     margin: 0 13px;
@@ -817,7 +819,7 @@
   height: 100%;
   display: flex;
   align-items: center;
-  gap: 12px;  
+  gap: 40px;  
 
   .search-icon {
     color: $title-color;
@@ -844,6 +846,22 @@
     &.sidebar-btn {
       border-radius: 6px;
       border: 1px solid #262626;
+    }
+  }
+  .phone {
+    display: flex;
+    gap: 10px;
+    i {
+      color: #573DB8;
+    }
+    .number {
+      color: var(--Gray-900, #07000E);
+      font-feature-settings: 'liga' off, 'clig' off;
+      font-family: "DM Sans";
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 27px; /* 150% */
     }
   }
 }

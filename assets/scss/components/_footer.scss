@@ -268,32 +268,35 @@
       &__text {
         padding-bottom: 14px;
         h1 {
-          color: var(--White, #FEFEFE);
-          font-family: Oswald;
-          font-size: 50px;
+          color: var(--White, #FFF);
+          font-feature-settings: 'liga' off, 'clig' off;
+          font-family: "DM Sans";
+          font-size: 72px;
           font-style: normal;
-          font-weight: 600;
-          line-height: 60px; 
-          letter-spacing: -1.6px;
-          text-transform: uppercase;
+          font-weight: 700;
+          line-height: 72px; /* 100% */
+          letter-spacing: -2px;
           padding-bottom: 15px;
+          max-width: 700px;
 
           @include breakpoint (lg){
             font-size: 60px;
             line-height: 86px;
           }
           @include breakpoint (xl){
-            font-size: 80px;
-            line-height: 86px;
+            font-size: 72px;
+            line-height: 72px;
           }
         }
         p {
-          color: var(--White, #FEFEFE);
-          font-family: "Plus Jakarta Sans";
+          color: var(--White, #FFF);
+          font-feature-settings: 'liga' off, 'clig' off;
+          font-family: "DM Sans";
           font-size: 18px;
           font-style: normal;
-          font-weight: 400;
-          line-height: 30px; 
+          font-weight: 500;
+          line-height: 28.01px; /* 155.611% */
+          max-width: 640px;
         }
       }
       &__cta {
@@ -301,21 +304,20 @@
         justify-content: end;
         align-items: center;
         a {
-          color: var(--White, #FEFEFE);
-          background-color: #F3604C;
-          font-family: Oswald;
+          background-color: #573DB8;
+          color: var(--White, #FFF);
+          font-family: "DM Sans";
           font-size: 18px;
           font-style: normal;
-          font-weight: 600;
-          line-height: 20px;
-          letter-spacing: -0.36px;
-          text-transform: uppercase;
+          font-weight: 700;
+          line-height: 20px; /* 111.111% */
+          letter-spacing: -0.25px;
           display: flex;
           align-items: center;
           justify-content: center;
           border-radius: 50%;
-          width: 180px;
-          height: 180px;
+          width: 160px;
+          height: 160px;
         }
       }
     }
