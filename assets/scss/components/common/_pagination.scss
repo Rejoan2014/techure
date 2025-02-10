@@ -1,0 +1,74 @@
+/* Style the pagination container */
+.slider-pagination {
+    display: flex;
+    justify-content: center;
+    gap: 10px; 
+    padding-top: 52px;
+}
+
+.swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background-color: $title-color; 
+    border-radius: 50%; 
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: $white; 
+    transform: scale(1.2); 
+    border: 3px solid $theme-color;
+}
+
+
+// Pagination with Number
+.page-nav-wrap {
+    ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+
+        li {
+            .page-numbers {
+                &.current {
+                    background: $theme-color;
+                    color: $white;  
+                }
+                
+                display: flex;
+                width: 60px;
+                height: 64px;
+                justify-content: center;
+                align-items: center;
+                color: $white;
+                background: $title-color;
+                border-radius: 6px;
+                font-family: $title-font;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 20px; 
+                letter-spacing: -0.36px;
+                text-transform: uppercase;
+
+                @media (max-width: 767px) {
+                    margin-top: 10px;
+                    width: 50px;
+                    height: 50px;
+                    font-size: 14px;
+                }
+  
+                i {
+                    font-size: 14px;
+                }
+  
+                &:hover {
+                    background: $theme-color;
+                    color: $white;
+                }
+            }
+        }
+    }
+}

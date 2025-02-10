@@ -1,0 +1,156 @@
+.widget {
+    &-card {
+      padding: 40px 30px;
+      border-radius: 20px;
+      background: var(--Background, #F9F9F9);
+      &:not(:last-child) {
+        margin-bottom: 60px;
+      }
+  
+      &__title {
+        padding-bottom: 25px;
+      }
+      &-search {
+        form {
+          position: relative;
+          input {
+              padding: 17px 20px 17px 46px;
+              width: 100%;
+  
+              color: var(--Black-Forest, #595959);
+              font-family: "Plus Jakarta Sans";
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 26px;           
+              border-radius: 6px;
+              border: 1px solid rgba(38, 38, 38, 0.10);
+              background-color: $white;
+          }
+  
+          button {
+              position: absolute;
+              left: 0;
+              top: 0;
+              width: 60px;
+              height: 100%;
+              font-size: 18px;
+              color: $theme-color;
+              text-align: center;
+          }
+        }
+      }
+      &-services {
+        ul {
+          li {
+            padding: 12px 20px;
+            border-radius: 6px;
+            border: 1px solid rgba(38, 38, 38, 0.10);
+            background: $white;
+            &:not(:last-child) {
+                margin-bottom: 12px;
+            }
+  
+            &:hover {
+              background: $theme-color;
+  
+              a {
+                color: $white;
+                i {
+                    color: $white;
+                }
+              }
+            }
+  
+            a {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              color: $title-color;
+              font-family: "Plus Jakarta Sans";
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 26px; 
+  
+              i {
+                color: $title-color;
+              }
+            }
+            &.active {
+              background-color: $theme-color;
+              a {
+                color: $white;
+                i {
+                    color: $white;
+                }
+              }
+            }
+          }
+        }
+      }
+      &-post {
+        &-items {
+          display: flex;
+          align-items: center;
+          gap: 24px;
+          &:not(:last-child) {
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+            border-bottom: 1px solid rgba(38, 38, 38, 0.10);
+          }
+  
+          &__thumb {
+            border-radius: 20px;
+            img {
+              max-width: fit-content;
+              border-radius: 20px;
+            }
+          }
+          &-content {
+            h5 {
+              padding-bottom: 12px;
+            }
+            p {
+              color: var(--color, #F3604C);
+              font-family: "Plus Jakarta Sans";
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 26px;
+              padding-top: 4px;
+            }
+          }
+        }
+      }
+      &-tagcloud {
+        &__list {
+          list-style: none;
+          padding: 0;
+          display: flex;
+          flex-wrap: wrap;
+          gap: 9px;
+  
+          li {
+            color: var(--Black, #262626);
+            font-family: "Plus Jakarta Sans";
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 30px; 
+            position: relative;
+    
+            &:not(:last-child)::after {
+              content: "";
+              display: inline-block;
+              width: 1px;
+              height: 15px;
+              background: var(--Black, #262626);
+              margin-left: 10px;
+              vertical-align: middle;
+            }
+          }
+        }
+      }
+    }
+}

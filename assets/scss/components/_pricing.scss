@@ -1,0 +1,77 @@
+  .pricing1 {
+    &-item {
+        position: relative;
+        &-card {
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            border-radius: 20px;
+            background: var(--White, #FEFEFE);
+            gap: 40px;
+            padding: 30px 40px;
+
+            @include breakpoint (lg) {
+                gap: 78px;
+                padding: 45px 60px;
+            }
+            
+            &-price {
+                &__value {
+                    color: var(--Black, #262626);
+                    text-align: right;
+                    font-family: Oswald;
+                    font-size: 60px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 66px; 
+                    letter-spacing: -1.2px;
+                    text-transform: uppercase;
+                }
+                &__unit {
+                    color: var(--Black, #262626);
+                    font-family: "Plus Jakarta Sans";
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 30px;
+                }
+            }
+            &-content {
+               flex: 1;
+               @include breakpoint (xl) {
+                   padding-right: 120px;
+                }
+               @include breakpoint (xxl) {
+                    padding-right: 225px;
+                }
+                &__title {
+                    color: $theme-color;
+                    text-transform: uppercase;
+                    padding-bottom: 15px;
+                }
+            }
+        }
+        &__thumb {
+            opacity: 0;
+            visibility: hidden;
+            position: absolute;
+            top: 13%;
+            right: 23%;
+            @include breakpoint (max-xl) {
+                display: none;
+            }
+        }
+        &:hover {
+            .pricing1 {
+                &-item {
+                    &__thumb {
+                        opacity: 1;
+                        visibility: visible;
+                        z-index: 10;
+                    }
+                }
+            }
+        }
+    }
+  }
