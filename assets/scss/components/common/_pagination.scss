@@ -1,9 +1,10 @@
 /* Style the pagination container */
 .slider-pagination {
     display: flex;
+    align-items: center;
     justify-content: center;
     gap: 10px; 
-    padding-top: 52px;
+    padding-top: 78px;
 }
 
 .swiper-pagination-bullet {
@@ -14,11 +15,12 @@
     transition: all 0.3s ease;
     cursor: pointer;
 }
-
 .swiper-pagination-bullet-active {
-    background-color: $white; 
-    transform: scale(1.2); 
-    border: 3px solid $theme-color;
+    background-color: $theme-color; 
+    border: 5px solid $white;
+    width: 25px;
+    height: 25px;
+    box-shadow: 0 0 0 1px $theme-color;
 }
 
 
