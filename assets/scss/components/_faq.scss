@@ -2,91 +2,76 @@
     # Faq style here
 ----------------------------------------------*/
 .faq1 {
-    &-content {
+    &__thumb {
+        border-radius: 20px;
+        margin-left: -350px;
         position: relative;
-
-        &__thumb {
+        img {
             border-radius: 20px;
-            &::before {
-                content: '';
-                position: absolute;
-                inset: 0;
-                border-radius: 20px;
-                background: linear-gradient(180deg, rgba(38, 38, 38, 0.00) 0%, #262626 121%);
-            }
-            img {
-                border-radius: 20px;
-                width: 100%;
-            }
-        }
-
-        &__phone {
-            display: flex;
-            gap: 10px;
-            position: absolute;
-            bottom: 38px;
-            left: 6%;
-            h3 {
-                color: $white;
-            }
+            width: 100%;
         }
     }
 }
 
 .faq-content {
-    margin-top: 35px;
+    position: relative;
+    z-index: 9;
+    padding: 25px;
+    background: $theme-color;
+    border-radius: 20px;
+    @include breakpoint (md) {
+        padding: 60px;
+    }
+    @include breakpoint (xl) {
+        margin-top: 45px;
+    }
+    @include breakpoint (xxl) {
+        margin-top: 76px;
+    }
+    &-title {
+        padding-bottom: 9px;
+    }
 
     .accordion-item {
-        background-color: $gray-color-1;
+        background-color: $theme-color;
         border: none;
-        border-top: 1px solid rgba(38, 38, 38, 0.30);
-        &:last-child {
-            border-bottom: 1px solid rgba(38, 38, 38, 0.30);
-        }
-        &:not(:last-child) {
-            border-bottom: none;
-        }
+        border-bottom: 1px solid rgba(121, 100, 198);
 
         .accordion-header {
             .accordion-button {
-                padding: 25px 0px 0;
+                padding: 37px 0px 18px;
                 border: none;
                 border-radius: 0;
                 box-shadow: none;
                 text-align: left;
+                background-color: $theme-color;
 
-                color: $title-color;
-                background-color: $gray-color-1;
-                font-size: 20px;
-                font-family: $title-font;
+                color: var(--White, #FFF);
+                font-feature-settings: 'liga' off, 'clig' off;
+                font-family: "DM Sans";
+                font-size: 18px;
                 font-style: normal;
-                font-weight: 600;
-                line-height: 30px;
-                letter-spacing: -0.48px;
-                text-transform: uppercase;
+                font-weight: 700;
+                line-height: 27px; /* 150% */
             
 
                 &:after {
                     font-weight: 500;
                     transition: all 0.3s ease-in-out !important;
-                    background-image: url(../../assets/images/icon/plus-icon.svg);
+                    background-image: url(../../assets/images/icon/plus-icon-white.svg);
                     color: $theme-color;
                 }
 
                 &:not(.collapsed):after {
-                    font-weight: 600;
+                    background-image: url(../../assets/images/icon/minus-icon-white.svg);
+                    font-weight: 500;
                     color: $theme-color;
-                    transform: rotate(45deg);
-                    -webkit-transform: rotate(45deg);
-                    -moz-transform: rotate(45deg);
-                    -ms-transform: rotate(45deg);
-                    -o-transform: rotate(45deg);
-}
+                }
 
                 &.collapsed {
                     background-color: transparent;
-                    padding: 25px 0px;
-                    color: $title-color;
+                    padding: 37px 0px 18px;
+                    color: $white;
                 }
 
             }
@@ -98,15 +83,16 @@
                 padding-right: 30px;
                 padding-left: 0px;
                 padding-top: 15px;
-                padding-bottom: 30px;
+                padding-bottom: 14px;
+                background-color: $theme-color;
 
-                color: $title-color-2;
-                font-family: $body-font;
-                font-size: 16px;
-                background-color: $gray-color-1;
+
+                color: var(--White, #FFF);
+                font-family: "DM Sans";
+                font-size: 18px;
                 font-style: normal;
-                font-weight: 400;
-                line-height: 26px; 
+                font-weight: 500;
+                line-height: 28.01px; 
 
                 @include breakpoint (max-xxl) {
                     padding-right: 50px;

@@ -67,13 +67,15 @@ h1 {
     font-size: 72px;
     font-style: normal;
     font-weight: 700;
-    line-height: 72px; /* 100% */
+    line-height: 72px; 
     letter-spacing: -2px;
     @include breakpoint(max-xxl) {
         font-size: 50px;
+        line-height: 62px; 
     }
     @include breakpoint(max-md) {
         font-size: 48px; 
+        line-height: 50px; 
     }
 }
 

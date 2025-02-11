@@ -623,17 +623,19 @@ h1 {
   font-size: 72px;
   font-style: normal;
   font-weight: 700;
-  line-height: 72px; /* 100% */
+  line-height: 72px;
   letter-spacing: -2px;
 }
 @media (max-width: 1399px) {
   h1 {
     font-size: 50px;
+    line-height: 62px;
   }
 }
 @media (max-width: 767px) {
   h1 {
     font-size: 48px;
+    line-height: 50px;
   }
 }
 
@@ -965,6 +967,10 @@ span a {
 
 .pb-30 {
   padding-bottom: 30px !important;
+}
+
+.pb-33 {
+  padding-bottom: 33px !important;
 }
 
 .pl-500 {
@@ -6832,83 +6838,76 @@ img {
 /*----------------------------------------------
     # Faq style here
 ----------------------------------------------*/
-.faq1-content {
+.faq1__thumb {
+  border-radius: 20px;
+  margin-left: -350px;
   position: relative;
 }
-.faq1-content__thumb {
-  border-radius: 20px;
-}
-.faq1-content__thumb::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: 20px;
-  background: linear-gradient(180deg, rgba(38, 38, 38, 0) 0%, #262626 121%);
-}
-.faq1-content__thumb img {
+.faq1__thumb img {
   border-radius: 20px;
   width: 100%;
 }
-.faq1-content__phone {
-  display: flex;
-  gap: 10px;
-  position: absolute;
-  bottom: 38px;
-  left: 6%;
-}
-.faq1-content__phone h3 {
-  color: var(--white);
-}
 
 .faq-content {
-  margin-top: 35px;
+  position: relative;
+  z-index: 9;
+  padding: 25px;
+  background: var(--theme);
+  border-radius: 20px;
+}
+@media (min-width: 768px) {
+  .faq-content {
+    padding: 60px;
+  }
+}
+@media (min-width: 1200px) {
+  .faq-content {
+    margin-top: 45px;
+  }
+}
+@media (min-width: 1400px) {
+  .faq-content {
+    margin-top: 76px;
+  }
+}
+.faq-content-title {
+  padding-bottom: 9px;
 }
 .faq-content .accordion-item {
-  background-color: var(--gray1);
+  background-color: var(--theme);
   border: none;
-  border-top: 1px solid rgba(38, 38, 38, 0.3);
-}
-.faq-content .accordion-item:last-child {
-  border-bottom: 1px solid rgba(38, 38, 38, 0.3);
-}
-.faq-content .accordion-item:not(:last-child) {
-  border-bottom: none;
+  border-bottom: 1px solid rgb(121, 100, 198);
 }
 .faq-content .accordion-item .accordion-header .accordion-button {
-  padding: 25px 0px 0;
+  padding: 37px 0px 18px;
   border: none;
   border-radius: 0;
   box-shadow: none;
   text-align: left;
-  color: var(--title);
-  background-color: var(--gray1);
-  font-size: 20px;
-  font-family: "Oswald", serif;
+  background-color: var(--theme);
+  color: var(--White, #FFF);
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: "DM Sans";
+  font-size: 18px;
   font-style: normal;
-  font-weight: 600;
-  line-height: 30px;
-  letter-spacing: -0.48px;
-  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 27px; /* 150% */
 }
 .faq-content .accordion-item .accordion-header .accordion-button:after {
   font-weight: 500;
   transition: all 0.3s ease-in-out !important;
-  background-image: url(../../assets/images/icon/plus-icon.svg);
+  background-image: url(../../assets/images/icon/plus-icon-white.svg);
   color: var(--theme);
 }
 .faq-content .accordion-item .accordion-header .accordion-button:not(.collapsed):after {
-  font-weight: 600;
+  background-image: url(../../assets/images/icon/minus-icon-white.svg);
+  font-weight: 500;
   color: var(--theme);
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
 }
 .faq-content .accordion-item .accordion-header .accordion-button.collapsed {
   background-color: transparent;
-  padding: 25px 0px;
-  color: var(--title);
+  padding: 37px 0px 18px;
+  color: var(--white);
 }
 .faq-content .accordion-item .accordion-collapse {
   border: none;
@@ -6917,14 +6916,14 @@ img {
   padding-right: 30px;
   padding-left: 0px;
   padding-top: 15px;
-  padding-bottom: 30px;
-  color: var(--title2);
-  font-family: "DM Sans", sans-serif;
-  font-size: 16px;
-  background-color: var(--gray1);
+  padding-bottom: 14px;
+  background-color: var(--theme);
+  color: var(--White, #FFF);
+  font-family: "DM Sans";
+  font-size: 18px;
   font-style: normal;
-  font-weight: 400;
-  line-height: 26px;
+  font-weight: 500;
+  line-height: 28.01px;
 }
 @media (max-width: 1399px) {
   .faq-content .accordion-item .accordion-collapse .accordion-body {
