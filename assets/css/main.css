@@ -1116,6 +1116,16 @@ img {
   background: rgba(7, 0, 14, 0.2);
   transform: translateX(-0.5rem);
 }
+@media (max-width: 1399px) {
+  .border-divider::before {
+    height: 204px;
+  }
+}
+@media (max-width: 1199px) {
+  .border-divider::before {
+    height: 266px;
+  }
+}
 
 .border-divider2 {
   position: relative;
@@ -1129,6 +1139,18 @@ img {
   height: 176px;
   width: 1px;
   background: rgba(7, 0, 14, 0.2);
+}
+@media (max-width: 1399px) {
+  .border-divider2::before,
+  .border-divider2::after {
+    height: 204px;
+  }
+}
+@media (max-width: 1199px) {
+  .border-divider2::before,
+  .border-divider2::after {
+    height: 266px;
+  }
 }
 
 .border-divider2::before {

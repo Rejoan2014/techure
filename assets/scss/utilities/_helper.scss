@@ -231,6 +231,12 @@ img {
     width: 1px;
     background: rgba(7, 0, 14, 0.20);
     transform: translateX(-0.5rem);
+    @include breakpoint (max-xxl) {
+      height: 204px;
+    }
+    @include breakpoint (max-xl) {
+      height: 266px;
+    }
   }
 
   .border-divider2 {
@@ -245,6 +251,12 @@ img {
     height: 176px;
     width: 1px;
     background: rgba(7, 0, 14, 0.20);
+    @include breakpoint (max-xxl) {
+      height: 204px;
+    }
+    @include breakpoint (max-xl) {
+      height: 266px;
+    }
   }
   
   .border-divider2::before {
