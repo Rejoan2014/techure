@@ -225,16 +225,41 @@ img {
   .border-divider::before {
     content: '';
     position: absolute;
-    left: 0;
+    left: 30px;
     top: 0;
-    height: 180px;
+    height: 176px;
     width: 1px;
     background: rgba(7, 0, 14, 0.20);
     transform: translateX(-0.5rem);
   }
+
+  .border-divider2 {
+    position: relative;
+  }
+  
+  .border-divider2::before,
+  .border-divider2::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    height: 176px;
+    width: 1px;
+    background: rgba(7, 0, 14, 0.20);
+  }
+  
+  .border-divider2::before {
+    left: 0;
+    transform: translateX(-1.75rem);
+  }
+  
+  .border-divider2::after {
+    right: 0;
+    transform: translateX(1rem);
+  }
+  
   
   .border-bottom-row {
     border-bottom: 1px solid rgba(7, 0, 14, 0.20);
-    padding-bottom: 4px;
+    padding-bottom: 24px;
   }
   
