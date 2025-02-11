@@ -3965,11 +3965,25 @@ img {
   padding-bottom: 8px;
 }
 .fancy-box-content__title {
-  text-transform: uppercase;
-  padding-bottom: 8px;
+  color: var(--Gray-900, #07000E);
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: "DM Sans";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 34.91px; /* 145.458% */
+  letter-spacing: -0.25px;
+  padding-bottom: 3px;
 }
 .fancy-box-content__desc {
-  font-size: 16px;
+  color: var(--Gray-800, #716F73);
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: "DM Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28.01px; /* 155.611% */
+  margin-bottom: 0;
 }
 
 .rating-box {
@@ -5979,6 +5993,65 @@ img {
   font-style: normal;
   font-weight: 400;
   line-height: 26px;
+}
+
+.testimonial4-card {
+  padding: 40px 32px 38px;
+  border-radius: 20px;
+  border: 1px solid var(--Home-Secondary, #8FD45F);
+  background: var(--White, #FFF);
+}
+@media (max-width: 767px) {
+  .testimonial4-card {
+    padding: 20px;
+  }
+}
+.testimonial4-card-header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.testimonial4-card-icon__star {
+  display: flex;
+}
+.testimonial4-card__desc {
+  padding-top: 27px;
+  margin-top: 28px;
+  padding-bottom: 22px;
+  border-top: 1px solid #ECECEC;
+}
+.testimonial4-card__desc p {
+  color: var(--Gray-800, #716F73);
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: "DM Sans";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 44px;
+}
+@media (max-width: 767px) {
+  .testimonial4-card__desc p {
+    font-size: 25px;
+    line-height: 35px;
+  }
+}
+.testimonial4-card-icon ul {
+  display: flex;
+  gap: 10px;
+}
+.testimonial4-card-icon ul li i {
+  display: flex;
+  gap: 10px;
+  color: var(--Brand-Seconday, #FFB34E);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+}
+.testimonial4-card-icon ul li:nth-of-type(5) i {
+  color: var(--Gray-900, #07000E);
+  opacity: 0.1;
 }
 
 /* 14.Testimonial */

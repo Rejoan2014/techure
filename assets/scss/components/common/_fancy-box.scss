@@ -16,11 +16,25 @@
             }
         }
         &__title{
-            text-transform: uppercase;
-            padding-bottom: 8px;
+            color: var(--Gray-900, #07000E);
+            font-feature-settings: 'liga' off, 'clig' off;
+            font-family: "DM Sans";
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 34.91px; /* 145.458% */
+            letter-spacing: -0.25px;
+            padding-bottom: 3px;
         }
         &__desc {
-            font-size: 16px;
+            color: var(--Gray-800, #716F73);
+            font-feature-settings: 'liga' off, 'clig' off;
+            font-family: "DM Sans";
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 28.01px; /* 155.611% */
+            margin-bottom: 0;
         }
 
     }   

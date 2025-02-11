@@ -165,3 +165,70 @@
         }
     }
 }
+
+.testimonial4{
+    &-card {
+        padding: 40px 32px 38px;
+        border-radius: 20px;
+        border: 1px solid var(--Home-Secondary, #8FD45F);
+        background: var(--White, #FFF);
+
+        @include breakpoint (max-md) {
+            padding: 20px;
+        }
+        &-header {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+        &-icon {
+            &__star {
+                display: flex;
+            }
+        }
+        &__desc {
+            padding-top: 27px;
+            margin-top: 28px;
+            padding-bottom: 22px;
+            border-top: 1px solid #ECECEC;
+            p {
+                color: var(--Gray-800, #716F73);
+                font-feature-settings: 'liga' off, 'clig' off;
+                font-family: "DM Sans";
+                font-size: 32px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 44px; 
+                @include breakpoint (max-md) {
+                    font-size: 25px;
+                    line-height: 35px;
+
+                }
+            }
+        }
+        &-icon {
+            ul {
+                display: flex;
+                gap: 10px;
+
+                li {
+                    i {
+                        display: flex;
+                        gap: 10px;
+                        color: var(--Brand-Seconday, #FFB34E);
+                        font-size: 20px;
+                        font-style: normal;
+                        font-weight: 900;
+                        line-height: normal;
+                      }
+                    
+                      &:nth-of-type(5) i {
+                        color: var(--Gray-900, #07000E);
+                        opacity: 0.1;
+                    }
+                }
+            }
+        }
+    }
+}
