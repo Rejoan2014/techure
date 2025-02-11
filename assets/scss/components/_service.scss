@@ -277,14 +277,15 @@
             display: flex;
             gap: 20px;
             span {
+                color: transparent;
                 font-feature-settings: 'liga' off, 'clig' off;
                 -webkit-text-stroke-width: 1px;
-                -webkit-text-stroke-color: var(--Gray-800, #716F73);
-                font-family: "DM Sans";
+                -webkit-text-stroke-color: #716F73;
+                font-family: "DM Sans", sans-serif;
                 font-size: 24px;
                 font-style: normal;
                 font-weight: 700;
-                line-height: 34.91px; /* 145.458% */
+                line-height: 34.91px;
                 letter-spacing: -0.25px;
             }
             h3 {
@@ -294,8 +295,33 @@
                 font-size: 24px;
                 font-style: normal;
                 font-weight: 700;
-                line-height: 34.91px; /* 145.458% */
+                line-height: 34.91px; 
                 letter-spacing: -0.25px;
+            }
+        }
+        &.style2 {
+            padding-left: 50px;
+            padding-right: 35px;
+            @include breakpoint (max-xl) {
+                padding-right: 30px;
+            }
+            @include breakpoint (max-lg) {
+                padding: 0px;
+            }
+        }
+        &.style3 {
+            @include breakpoint (max-lg) {
+                padding: 0px;
+            }
+        }
+        &.style4 {
+            padding-left: 40px;
+            padding-right: 60px;
+            @include breakpoint (max-xl) {
+                padding-right: 40px;
+            }
+            @include breakpoint (max-lg) {
+                padding: 0px;
             }
         }
     }

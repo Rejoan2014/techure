@@ -141,8 +141,6 @@
             font-weight: 700;
             line-height: 20px; 
             letter-spacing: -0.25px;
-    
-            // display: flex;
             border-radius: 999px;
             background: var(--Home-Primary, #573DB8);
             height: 60px;
@@ -150,16 +148,6 @@
             justify-content: center;
             align-items: center;
             gap: 10px;
-            @include breakpoint (max-md) {
-                padding: 15px 28px;
-            }
-            a {
-                color: $white!important;
-                display: inline-block;
-            }
-            i {
-                margin-left: 6px;
-            }
         } 
         &.style2 {
             img {

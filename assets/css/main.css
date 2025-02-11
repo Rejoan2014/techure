@@ -1126,6 +1126,11 @@ img {
     height: 266px;
   }
 }
+@media (max-width: 991px) {
+  .border-divider::before {
+    display: none;
+  }
+}
 
 .border-divider2 {
   position: relative;
@@ -1152,6 +1157,12 @@ img {
     height: 266px;
   }
 }
+@media (max-width: 991px) {
+  .border-divider2::before,
+  .border-divider2::after {
+    display: none;
+  }
+}
 
 .border-divider2::before {
   left: 0;
@@ -1166,6 +1177,12 @@ img {
 .border-bottom-row {
   border-bottom: 1px solid rgba(7, 0, 14, 0.2);
   padding-bottom: 24px;
+}
+@media (max-width: 991px) {
+  .border-bottom-row {
+    border: none;
+    padding-bottom: 0px;
+  }
 }
 
 /* 07.Animation */
@@ -2332,18 +2349,6 @@ img {
   justify-content: center;
   align-items: center;
   gap: 10px;
-}
-@media (max-width: 767px) {
-  .btn-wrapper .group-btn.style1 {
-    padding: 15px 28px;
-  }
-}
-.btn-wrapper .group-btn.style1 a {
-  color: var(--white) !important;
-  display: inline-block;
-}
-.btn-wrapper .group-btn.style1 i {
-  margin-left: 6px;
 }
 .btn-wrapper .group-btn.style2 img {
   border-radius: 999px;
@@ -5774,14 +5779,15 @@ img {
   gap: 20px;
 }
 .service-card-title span {
+  color: transparent;
   font-feature-settings: "liga" off, "clig" off;
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: var(--Gray-800, #716F73);
-  font-family: "DM Sans";
+  -webkit-text-stroke-color: #716F73;
+  font-family: "DM Sans", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
-  line-height: 34.91px; /* 145.458% */
+  line-height: 34.91px;
   letter-spacing: -0.25px;
 }
 .service-card-title h3 {
@@ -5791,8 +5797,41 @@ img {
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
-  line-height: 34.91px; /* 145.458% */
+  line-height: 34.91px;
   letter-spacing: -0.25px;
+}
+.service-card.style2 {
+  padding-left: 50px;
+  padding-right: 35px;
+}
+@media (max-width: 1199px) {
+  .service-card.style2 {
+    padding-right: 30px;
+  }
+}
+@media (max-width: 991px) {
+  .service-card.style2 {
+    padding: 0px;
+  }
+}
+@media (max-width: 991px) {
+  .service-card.style3 {
+    padding: 0px;
+  }
+}
+.service-card.style4 {
+  padding-left: 40px;
+  padding-right: 60px;
+}
+@media (max-width: 1199px) {
+  .service-card.style4 {
+    padding-right: 40px;
+  }
+}
+@media (max-width: 991px) {
+  .service-card.style4 {
+    padding: 0px;
+  }
 }
 
 /* 14.Project */

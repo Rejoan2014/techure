@@ -237,6 +237,9 @@ img {
     @include breakpoint (max-xl) {
       height: 266px;
     }
+    @include breakpoint (max-lg) {
+      display: none;
+    }
   }
 
   .border-divider2 {
@@ -257,6 +260,9 @@ img {
     @include breakpoint (max-xl) {
       height: 266px;
     }
+    @include breakpoint (max-lg) {
+      display: none;
+    }
   }
   
   .border-divider2::before {
@@ -273,5 +279,10 @@ img {
   .border-bottom-row {
     border-bottom: 1px solid rgba(7, 0, 14, 0.20);
     padding-bottom: 24px;
+    @include breakpoint (max-lg) {
+      border: none;
+      padding-bottom: 0px;
+
+    }
   }
   
