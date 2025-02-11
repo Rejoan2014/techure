@@ -168,3 +168,47 @@
         }
     }
 }
+.wcu {
+    &-card {
+        &__link {
+            display: flex;
+            height: 60px;
+            padding: 16px 30px;
+            align-items: center;
+            gap: 20px;
+            flex-shrink: 0;
+            color: var(--Gray-900, #07000E);
+            text-align: center;
+            font-feature-settings: 'liga' off, 'clig' off;
+            border-radius: 20px;
+            background: var(--Gray-100, #F7F1FC);
+            font-family: "DM Sans";
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 28.01px;
+            &:not(:last-child) {
+                margin-bottom: 30px;
+            }
+
+            @include breakpoint (max-xxl){
+                padding: 16px 20px;
+                gap: 14px;
+                &:not(:last-child) {
+                    margin-bottom: 15px;
+                }
+            }
+            @include breakpoint (max-xl){
+                padding: 16px 20px;
+                gap: 14px;
+                &:not(:last-child) {
+                    margin-bottom: 30px;
+                }
+            }
+            @include breakpoint (max-lg){
+                padding: 16px 17px;
+                gap: 10px;
+            }
+        }
+    }
+}
