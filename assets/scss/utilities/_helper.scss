@@ -217,7 +217,24 @@ img {
       }
     }
   }
-  // .swiper {
-  //   overflow: visible;
-  // }
+
+  .border-divider {
+    position: relative;
+  }
+  
+  .border-divider::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 180px;
+    width: 1px;
+    background: rgba(7, 0, 14, 0.20);
+    transform: translateX(-0.5rem);
+  }
+  
+  .border-bottom-row {
+    border-bottom: 1px solid rgba(7, 0, 14, 0.20);
+    padding-bottom: 4px;
+  }
   
