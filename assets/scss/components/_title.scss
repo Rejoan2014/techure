@@ -3,15 +3,16 @@
 ----------------------------------------------*/
  .section-top {
     &__subtitle {
-        color: $theme-color; 
-        font-family: $title-font;  
+        color: var(--Gray-900, #07000E);
+        text-align: center;
+        font-family: "DM Sans";
         font-size: 18px;
         font-style: normal;
-        font-weight: 600;
-        line-height: 20px;  
-        letter-spacing: -0.36px;
+        font-weight: 700;
+        line-height: 27px; 
+        letter-spacing: 4px;
         text-transform: uppercase;
-        margin-bottom: 12px;
+        margin-bottom: 14px;
     }
     &__subtitle2 {
         color: $theme-color; 
@@ -26,14 +27,15 @@
     }
 
     &__title {
-        color: $title-color; 
-        font-family: $title-font;  
-        font-size: 60px;
+        color: var(--Gray-900, #07000E);
+        text-align: center;
+        font-feature-settings: 'liga' off, 'clig' off;
+        font-family: "DM Sans";
+        font-size: 72px;
         font-style: normal;
-        font-weight: 600;
-        line-height: 66px;  
-        letter-spacing: -1.2px;
-        text-transform: uppercase;
+        font-weight: 700;
+        line-height: 72px; 
+        letter-spacing: -2px;
         @include breakpoint (max-xl) {
             font-size: 45px;
             line-height: 50px;

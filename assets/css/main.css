@@ -639,7 +639,6 @@ h1 {
 
 h2 {
   color: var(--Gray-900, #07000E);
-  text-align: center;
   font-feature-settings: "liga" off, "clig" off;
   font-family: "DM Sans";
   font-size: 54px;
@@ -699,7 +698,6 @@ h4 {
 
 h5 {
   color: var(--Gray-900, #07000E);
-  text-align: center;
   font-family: "DM Sans";
   font-size: 18px;
   font-style: normal;
@@ -942,7 +940,7 @@ span a {
 }
 @media (min-width: 992px) {
   .section-padding {
-    padding: 130px 0;
+    padding: 150px 0;
   }
 }
 
@@ -1029,6 +1027,10 @@ span a {
 
 .bg-theme2 {
   background-color: var(--theme2) !important;
+}
+
+.bg-gray {
+  background-color: var(--header);
 }
 
 .bg-gray-1 {
@@ -3351,15 +3353,16 @@ img {
     # Title style here
 ----------------------------------------------*/
 .section-top__subtitle {
-  color: var(--theme);
-  font-family: "Oswald", serif;
+  color: var(--Gray-900, #07000E);
+  text-align: center;
+  font-family: "DM Sans";
   font-size: 18px;
   font-style: normal;
-  font-weight: 600;
-  line-height: 20px;
-  letter-spacing: -0.36px;
+  font-weight: 700;
+  line-height: 27px;
+  letter-spacing: 4px;
   text-transform: uppercase;
-  margin-bottom: 12px;
+  margin-bottom: 14px;
 }
 .section-top__subtitle2 {
   color: var(--theme);
@@ -3373,14 +3376,15 @@ img {
   margin-bottom: 12px;
 }
 .section-top__title {
-  color: var(--title);
-  font-family: "Oswald", serif;
-  font-size: 60px;
+  color: var(--Gray-900, #07000E);
+  text-align: center;
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: "DM Sans";
+  font-size: 72px;
   font-style: normal;
-  font-weight: 600;
-  line-height: 66px;
-  letter-spacing: -1.2px;
-  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 72px;
+  letter-spacing: -2px;
 }
 @media (max-width: 1199px) {
   .section-top__title {
@@ -6078,43 +6082,89 @@ img {
 
 /* 14.Blog */
 .blog1-card {
+  padding: 10px;
   border-radius: 20px;
-  background: var(--Background, #F9F9F9);
+  border: 1px solid rgba(7, 0, 14, 0.2);
+  background: var(--Gray-100, #F7F1FC);
 }
 .blog1-card__thumb {
-  border-radius: 20px 20px 0px 0px;
+  border-radius: 20px;
+  position: relative;
 }
 .blog1-card__thumb img {
-  border-radius: 20px 20px 0px 0px;
+  border-radius: 20px;
   width: 100%;
 }
+.blog1-card__thumb-icon {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}
+.blog1-card__thumb-icon i {
+  color: var(--Gray-900, #07000E);
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  border-radius: 999px;
+  background: var(--Home-Secondary, #8FD45F);
+  padding: 8px;
+}
+.blog1-card__thumb-icon span {
+  color: var(--Gray-900, #07000E);
+  font-family: "DM Sans";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 19.2px */
+  border-radius: 999px;
+  background: var(--Home-Secondary, #8FD45F);
+  padding: 8px;
+}
 .blog1-card-content {
-  padding: 18px 28px 26px;
+  padding: 18px 18px 15px;
 }
 .blog1-card-content-meta {
-  padding-bottom: 6px;
+  display: flex;
+  align-items: center;
+  gap: 27px;
+  padding-bottom: 16px;
+  color: var(--Gray-800, #716F73);
+  font-family: "DM Sans";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 19.2px */
 }
-.blog1-card-content-meta__date {
-  color: var(--Black, #262626);
-  font-family: "Plus Jakarta Sans";
+.blog1-card-content-meta__user i {
+  padding-right: 5px;
+  color: var(--Gray-900, #07000E);
+  font-size: 16px;
+  font-style: normal;
+  line-height: normal;
+}
+.blog1-card-content-meta__category i {
+  padding-right: 5px;
+  color: var(--Gray-900, #07000E);
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 26px;
+  line-height: normal;
 }
 .blog1-card-content__title {
-  padding-bottom: 36px;
+  padding-bottom: 30px;
 }
 .blog1-card-content__link a {
-  color: var(--color, #F3604C);
-  font-family: Oswald;
-  font-size: 16px;
+  color: var(--Gray-900, #07000E);
+  font-family: "DM Sans";
+  font-size: 18px;
   font-style: normal;
-  font-weight: 600;
-  line-height: 20px;
-  letter-spacing: -0.32px;
-  text-transform: uppercase;
-  border-bottom: 2px solid var(--color, #F3604C);
+  font-weight: 700;
+  line-height: 20px; /* 111.111% */
+  letter-spacing: -0.25px;
+}
+.blog1-card-content__link a img {
+  padding-left: 3px;
 }
 
 .blog2-card {
