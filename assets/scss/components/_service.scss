@@ -329,18 +329,27 @@
 
 .service4 {
     &-card {
+        margin-left: 45px;
         position: relative;
         border-radius: 20px;
         border: 1px solid rgba(7, 0, 14, 0.20);
         background: var(--Gray-100, #F7F1FC);
         margin-bottom: 24px;
-        padding: 38px 30px 38px 60px;
-       @include transition;
+        padding: 38px 34px 35px 60px;
+
+        
+        @include breakpoint (max-lg) {
+            margin-left: 34px;
+        }
+        @include breakpoint (max-sm) {
+            padding: 25px 25px 25px 33px;
+            margin-left: 0px;
+        }
 
         &__icon {
             position: absolute;
             left: -11%;
-            top: 68px;
+            top: 82px;
 
             display: flex;
             width: 80px;
@@ -350,6 +359,18 @@
             align-items: center;
             border-radius: 999px;
             background-color: var(--White, #FFF);
+
+            @include breakpoint (max-lg) {
+                left: -6%;
+                top: 60px;
+            }
+            @include breakpoint (max-md) {
+                left: -8%;
+                top: 72px;
+            }
+            @include breakpoint (max-sm) {
+                display: none;
+            }
         
         }
 
@@ -362,7 +383,7 @@
             font-weight: 700;
             line-height: 34.91px; /* 145.458% */
             letter-spacing: -0.25px;
-            margin-bottom: 12px;
+            margin-bottom: 18px;
         }
 
         &__desc {
@@ -373,7 +394,7 @@
             font-style: normal;
             font-weight: 500;
             line-height: 28.01px; 
-            margin-bottom: 20px;
+            margin-bottom: 31px;
         }
 
         &__link {
