@@ -145,3 +145,28 @@
 
     }
 }
+.team {
+    &-card {
+        position: relative;
+        &-circle {
+            border-radius: 410px;
+            border: 1px solid rgb(199, 193, 204);
+            width: 410px;
+            height: 410px;
+        }
+        &__thumb {
+            position: absolute;
+            top: -16px;
+            left: 13%;
+        }
+        &-shape {
+            position: absolute;
+            bottom: 0;
+        }
+        // &__title {
+        //     border-radius: 572px;
+        //     background: var(--Home-Primary, #573DB8);
+        // }
+    }
+}
+

@@ -7410,6 +7410,25 @@ img {
   padding-top: 2px;
 }
 
+.team-card {
+  position: relative;
+}
+.team-card-circle {
+  border-radius: 410px;
+  border: 1px solid rgb(199, 193, 204);
+  width: 410px;
+  height: 410px;
+}
+.team-card__thumb {
+  position: absolute;
+  top: -16px;
+  left: 13%;
+}
+.team-card-shape {
+  position: absolute;
+  bottom: 0;
+}
+
 /* 14.Faq */
 /*----------------------------------------------
     # Faq style here
