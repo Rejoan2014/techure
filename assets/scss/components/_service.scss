@@ -329,57 +329,65 @@
 
 .service4 {
     &-card {
-        margin-bottom: 24px;
-        padding: 30px;
+        position: relative;
         border-radius: 20px;
-        background-color: $gray-color-1;
+        border: 1px solid rgba(7, 0, 14, 0.20);
+        background: var(--Gray-100, #F7F1FC);
+        margin-bottom: 24px;
+        padding: 38px 30px 38px 60px;
        @include transition;
 
         &__icon {
+            position: absolute;
+            left: -11%;
+            top: 68px;
+
             display: flex;
             width: 80px;
             height: 80px;
             padding: 20px;
             justify-content: center;
             align-items: center;
-            border-radius: 6px;
-            background-color: rgba(243, 96, 76, 0.10);
-            margin-bottom: 60px;
-            @include transition; 
+            border-radius: 999px;
+            background-color: var(--White, #FFF);
+        
         }
 
         &__title {
-            color: var(--Black, #262626);
-            font-family: Oswald;
+            color: var(--Gray-900, #07000E);
+            font-feature-settings: 'liga' off, 'clig' off;
+            font-family: "DM Sans";
             font-size: 24px;
             font-style: normal;
-            font-weight: 600;
-            line-height: 30px; 
-            letter-spacing: -0.48px;
-            text-transform: uppercase;
+            font-weight: 700;
+            line-height: 34.91px; /* 145.458% */
+            letter-spacing: -0.25px;
             margin-bottom: 12px;
         }
 
         &__desc {
-            color: $title-color;
-            font-family: $body-font;
-            font-size: 16px;
+            color: var(--Gray-800, #716F73);
+            font-feature-settings: 'liga' off, 'clig' off;
+            font-family: "DM Sans";
+            font-size: 18px;
             font-style: normal;
-            font-weight: 400;
-            line-height: 26px;
+            font-weight: 500;
+            line-height: 28.01px; 
             margin-bottom: 20px;
         }
 
         &__link {
-            color: $theme-color;
-            font-family: $title-font;
-            font-size: 16px;
+            color: var(--Gray-900, #07000E);
+            font-family: "DM Sans";
+            font-size: 18px;
             font-style: normal;
-            font-weight: 600;
-            line-height: 20px;
-            letter-spacing: -0.32px;
-            text-transform: uppercase;
-            text-decoration: underline;
+            font-weight: 700;
+            line-height: 20px; /* 111.111% */
+            letter-spacing: -0.25px;
+
+            img {
+                padding-left: 10px;
+            }
         }
 
         &:hover {
