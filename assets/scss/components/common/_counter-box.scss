@@ -1,8 +1,8 @@
 .counter {
     border-radius: 20px;
     background: var(--White, #FFF);
-    padding: 265px 80px 80px;
-    margin-top: -170px;
+    padding: 244px 80px 62px;
+    margin-top: -166px;
 
     &-item {
         display: flex;
@@ -28,7 +28,7 @@
                 font-weight: 700;
                 line-height: 72px; 
                 letter-spacing: -2px;
-                padding-bottom: 10px;
+                padding-bottom: 7px;
                 @include breakpoint (max-lg) {
                     font-size: 60px;
                 }
