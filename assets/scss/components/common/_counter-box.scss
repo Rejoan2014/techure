@@ -1,4 +1,9 @@
 .counter {
+    border-radius: 20px;
+    background: var(--White, #FFF);
+    padding: 265px 80px 80px;
+    margin-top: -170px;
+
     &-item {
         display: flex;
         align-items: center;
@@ -10,30 +15,19 @@
         }
 
         &-box {
-            align-items: center;
             display: flex;
             justify-content: center;
             flex-direction: column;
 
-            border-radius: 50%;
-            border: 1px dashed white;
-            width: 250px;
-            height: 250px;
-            @include breakpoint (max-lg) {
-                width: 220px;
-                height: 220px;
-            }
-
-
             &__value {
-                color: $white;
-                font-family: $title-font;
-                font-size: 80px;
+                color: var(--Gray-900, #07000E);
+                font-feature-settings: 'liga' off, 'clig' off;
+                font-family: "DM Sans";
+                font-size: 72px;
                 font-style: normal;
-                font-weight: 600;
-                line-height: 86px; 
-                letter-spacing: -1.6px;
-                text-transform: uppercase;
+                font-weight: 700;
+                line-height: 72px; 
+                letter-spacing: -2px;
                 padding-bottom: 10px;
                 @include breakpoint (max-lg) {
                     font-size: 60px;
@@ -41,7 +35,13 @@
             }
             &__label {
                 p {
-                    color: $white;
+                    color: var(--Gray-900, #07000E);
+                    font-feature-settings: 'liga' off, 'clig' off;
+                    font-family: "DM Sans";
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 28.01px; 
                 }
             }
         }

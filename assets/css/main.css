@@ -1185,6 +1185,19 @@ img {
   }
 }
 
+.bg-gray-half {
+  position: relative;
+}
+.bg-gray-half::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background-color: var(--white);
+}
+
 /* 07.Animation */
 /*----------------------------------------------
     # All Animation style here
@@ -4009,6 +4022,12 @@ img {
 }
 
 /* 12.Common */
+.counter {
+  border-radius: 20px;
+  background: var(--White, #FFF);
+  padding: 265px 80px 80px;
+  margin-top: -170px;
+}
 .counter-item {
   display: flex;
   align-items: center;
@@ -4022,30 +4041,19 @@ img {
   }
 }
 .counter-item-box {
-  align-items: center;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  border-radius: 50%;
-  border: 1px dashed white;
-  width: 250px;
-  height: 250px;
-}
-@media (max-width: 991px) {
-  .counter-item-box {
-    width: 220px;
-    height: 220px;
-  }
 }
 .counter-item-box__value {
-  color: var(--white);
-  font-family: "Oswald", serif;
-  font-size: 80px;
+  color: var(--Gray-900, #07000E);
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: "DM Sans";
+  font-size: 72px;
   font-style: normal;
-  font-weight: 600;
-  line-height: 86px;
-  letter-spacing: -1.6px;
-  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 72px;
+  letter-spacing: -2px;
   padding-bottom: 10px;
 }
 @media (max-width: 991px) {
@@ -4054,7 +4062,13 @@ img {
   }
 }
 .counter-item-box__label p {
-  color: var(--white);
+  color: var(--Gray-900, #07000E);
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: "DM Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28.01px;
 }
 
 /*----------------------------------------------
@@ -5589,6 +5603,9 @@ img {
   line-height: 26px;
 }
 
+.about {
+  position: relative;
+}
 .about-card__thumb {
   text-align: end;
 }
