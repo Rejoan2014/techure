@@ -5834,6 +5834,66 @@ img {
   }
 }
 
+.service4-card {
+  margin-bottom: 24px;
+  padding: 30px;
+  border-radius: 20px;
+  background-color: var(--gray1);
+  transition: all 0.4s ease-in-out;
+}
+.service4-card__icon {
+  display: flex;
+  width: 80px;
+  height: 80px;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  background-color: rgba(243, 96, 76, 0.1);
+  margin-bottom: 60px;
+  transition: all 0.4s ease-in-out;
+}
+.service4-card__title {
+  color: var(--Black, #262626);
+  font-family: Oswald;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: -0.48px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+.service4-card__desc {
+  color: var(--title);
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  margin-bottom: 20px;
+}
+.service4-card__link {
+  color: var(--theme);
+  font-family: "Oswald", serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: -0.32px;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+.service4-card:hover .service3-card__icon {
+  background-color: var(--theme);
+}
+.service4-card:hover .service3-card__icon svg path {
+  fill: var(--white);
+}
+.service4-card:hover .service3-card__icon svg path stroke {
+  fill: var(--white);
+}
+
 /* 14.Project */
 .project1-card1 {
   padding-top: 0px;
