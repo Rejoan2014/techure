@@ -4124,6 +4124,40 @@ img {
   margin-bottom: 0;
 }
 
+.fancy-box1 {
+  display: flex;
+  gap: 27px;
+  margin-right: 60px;
+  border-radius: 20px;
+  background: var(--Gray-100, #F7F1FC);
+  box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.05);
+  padding: 20px 30px 5px;
+  margin-bottom: 30px;
+}
+.fancy-box1 .header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding-bottom: 10px;
+}
+.fancy-box1 .header .title {
+  color: var(--Gray-900, #07000E);
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: "DM Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 27px; /* 150% */
+}
+.fancy-box1 .desc p {
+  color: var(--Gray-800, #716F73);
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: "DM Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px; /* 157.143% */
+}
 .rating-box {
   display: flex;
   align-items: center;
@@ -5553,6 +5587,25 @@ img {
   font-style: normal;
   font-weight: 400;
   line-height: 26px;
+}
+
+.about-card__thumb {
+  text-align: end;
+}
+.about-card__link {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: var(--Gray-900, #07000E);
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: "DM Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 27px;
+}
+.about-card__link:not(:last-child) {
+  margin-bottom: 18px;
 }
 
 /* 14.Service */
