@@ -1,0 +1,60 @@
+.story {
+    &__title {
+        color: var(--Gray-900, #07000E);
+        font-feature-settings: 'liga' off, 'clig' off;
+        font-family: "DM Sans";
+        font-size: 54px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 130%; /* 70.2px */
+        text-transform: capitalize;
+    }
+    &__desc {
+        color: var(--Gray-800, #716F73);
+        font-feature-settings: 'liga' off, 'clig' off;
+        font-family: "DM Sans";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 28.01px;
+        padding-left: 20px;
+        @include breakpoint (max-lg) {
+            padding-left: 0px;
+        }
+    }
+    &-brandLogo {
+        padding-top: 10px;
+        @include breakpoint (md) {
+            padding-top: 10px;
+        }
+        @include breakpoint (xl) {
+            padding-top: 15px;
+        }
+        &__title {
+            padding-bottom: 22px;
+            h6 {
+                color: var(--Black, #262626);
+                text-align: center;
+                font-family: $title-font2;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 30px;
+            }
+        }
+        &-slider {
+            border-radius: 20px;
+            border: 1px solid rgba(0, 0, 0, 0.20);
+            padding: 58px 60px;
+            @include breakpoint (max-xxl) {
+                padding: 50px;
+            }
+            @include breakpoint (max-xl) {
+                padding: 40px;
+            }
+            @include breakpoint (max-lg) {
+                padding: 30px;
+            }
+        }
+    }
+}
