@@ -51,6 +51,13 @@
     box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.05);
     padding: 20px 30px 5px;
     margin-bottom: 30px;
+
+    @include breakpoint (max-xl) {
+        margin-right: 0px;
+    }
+    @include breakpoint (max-sm) {
+        flex-direction: column;
+    }
   
     .header {
       display: flex;

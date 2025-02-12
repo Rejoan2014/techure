@@ -3,6 +3,9 @@
     background: var(--White, #FFF);
     padding: 244px 80px 62px;
     margin-top: -166px;
+    @include breakpoint(max-xl) {
+        padding: 244px 40px 62px;
+    }
 
     &-item {
         display: flex;
@@ -10,14 +13,39 @@
         justify-content: space-between;
         flex-wrap: wrap;
         gap: 30px;
-        @include breakpoint (max-lg) {
-            justify-content: center;
+
+        @include breakpoint(max-lg) {
+            // justify-content: center;
         }
 
         &-box {
             display: flex;
             justify-content: center;
             flex-direction: column;
+            position: relative;
+
+            &::after {
+                content: "";
+                display: block;
+                width: 79px;
+                height: 1px;
+                background: #07000E;
+                opacity: 0.2;
+                margin: 10px auto;
+                position: absolute;
+                right: -125px;
+                top: 50px;
+                @include breakpoint (max-xxl) {
+                    right: -100px;
+                }
+                @include breakpoint (max-xl) {
+                   display: none;
+                }
+            }
+
+            &:last-child::after {
+                display: none;
+            }
 
             &__value {
                 color: var(--Gray-900, #07000E);
@@ -26,13 +54,15 @@
                 font-size: 72px;
                 font-style: normal;
                 font-weight: 700;
-                line-height: 72px; 
+                line-height: 72px;
                 letter-spacing: -2px;
                 padding-bottom: 7px;
-                @include breakpoint (max-lg) {
-                    font-size: 60px;
+
+                @include breakpoint(max-lg) {
+                    font-size: 52px;
                 }
             }
+
             &__label {
                 p {
                     color: var(--Gray-900, #07000E);
@@ -41,11 +71,10 @@
                     font-size: 18px;
                     font-style: normal;
                     font-weight: 500;
-                    line-height: 28.01px; 
+                    line-height: 28.01px;
                 }
             }
         }
-    
     }
 }
 
