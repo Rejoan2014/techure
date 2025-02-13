@@ -1051,6 +1051,10 @@ span a {
   background-color: var(--theme2);
 }
 
+.bg-dark-2 {
+  background-color: var(--title);
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -8350,14 +8354,8 @@ img {
   justify-content: center;
   align-items: center;
   gap: 10px;
-  border-radius: 6px;
-  background: var(--White, #FEFEFE);
-}
-.footer2-wrapper-logoInfo-social__item a:hover {
-  background: var(--color, #F3604C);
-}
-.footer2-wrapper-logoInfo-social__item a:hover svg path {
-  fill: var(--white);
+  border-radius: 50px;
+  background: var(--Gray-900, #07000E);
 }
 @media (min-width: 1200px) {
   .footer2-wrapper-link {
@@ -8427,12 +8425,13 @@ img {
   border: none;
   outline: none;
   box-sizing: border-box;
-  color: var(--Black-Forest, #595959);
-  font-family: "Plus Jakarta Sans";
-  font-size: 16px;
+  color: var(--White, #FFF);
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: "DM Sans";
+  font-size: 18px;
   font-style: normal;
-  font-weight: 400;
-  line-height: 26px;
+  font-weight: 500;
+  line-height: 28.01px; /* 155.611% */
 }
 .footer2-wrapper-subscribe-form__button {
   position: absolute;

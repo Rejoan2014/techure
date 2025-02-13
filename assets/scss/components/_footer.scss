@@ -346,17 +346,18 @@
             justify-content: center;
             align-items: center;
             gap: 10px;
-            border-radius: 6px;
-            background: var(--White, #FEFEFE);
+            border-radius: 50px;
+
+            background: var(--Gray-900, #07000E);
       
-            &:hover {
-              background: var(--color, #F3604C);
-              svg {
-                path {
-                  fill: $white;
-                }
-              }
-            }
+            // &:hover {
+            //   background: var(--color, #F3604C);
+            //   svg {
+            //     path {
+            //       fill: $white;
+            //     }
+            //   }
+            // }
           }
         }
       }
@@ -430,14 +431,14 @@
           outline: none;
           box-sizing: border-box;
 
-          color: var(--Black-Forest, #595959);
-          font-family: "Plus Jakarta Sans";
-          font-size: 16px;
-          font-style: normal;
-          font-weight: 400;
-          line-height: 26px; 
 
-    
+          color: var(--White, #FFF);
+          font-feature-settings: 'liga' off, 'clig' off;
+          font-family: "DM Sans";
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 28.01px; /* 155.611% */    
         }
         &__button {
           position: absolute;
