@@ -7736,6 +7736,26 @@ img {
   top: -16px;
   left: 13%;
 }
+.team-card__thumb.two {
+  position: absolute;
+  top: 6px;
+  left: 20%;
+}
+.team-card__thumb.three {
+  position: absolute;
+  top: 15px;
+  left: 4%;
+}
+.team-card__thumb.four {
+  position: absolute;
+  top: -7px;
+  left: 10%;
+}
+.team-card__thumb.five {
+  position: absolute;
+  top: -3px;
+  left: 0%;
+}
 .team-card-shape {
   position: absolute;
   bottom: 0;
