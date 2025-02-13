@@ -323,8 +323,9 @@
     }
 
     &-logoInfo {
+      padding-right: 58px;
       &__logo {
-        padding-bottom: 15px;
+        padding-bottom: 26px;
       }
       &__desc {
         color: var(--Background, #F9F9F9);
@@ -335,7 +336,7 @@
         line-height: 30px; /* 166.667% */
       }
       &-social {
-        padding-top: 23px;
+        padding-top: 40px;
         display: flex;
         gap: 20px;
         &__item {
@@ -469,17 +470,19 @@
         padding-left: 44px;
       }
       @include breakpoint (xxl) {
-        padding-left: 38px;
+        padding-left: 100px;
       }
       &__title {
-        color: #FFF;
-        font-family: "Plus Jakarta Sans";
-        font-size: 20px;
+        color: var(--White, #FFF);
+        font-feature-settings: 'liga' off, 'clig' off;
+        font-family: "DM Sans";
+        font-size: 24px;
         font-style: normal;
         font-weight: 700;
-        line-height: 32px;
-        text-transform: capitalize;
-        padding-bottom: 15px;
+        line-height: 34.91px; /* 145.458% */
+        letter-spacing: -0.25px;
+        padding-bottom: 29px;
+        text-transform: none;
       }
       &-list {
         &__item {    
@@ -487,12 +490,13 @@
             padding-bottom: 13px;
           }
           a {
-            color: var(--Background, #F9F9F9);
-            font-family: "Plus Jakarta Sans";
-            font-size: 16px;
+            color: var(--White, #FFF);
+            font-feature-settings: 'liga' off, 'clig' off;
+            font-family: "DM Sans";
+            font-size: 18px;
             font-style: normal;
-            font-weight: 400;
-            line-height: 26px;
+            font-weight: 500;
+            line-height: 28.01px; /* 155.611% */
             &:hover {
               color: var(--Background, #F9F9F9);
             }
@@ -502,20 +506,22 @@
     }    
     &-contact {
       @include breakpoint (xl) {
-        padding-left: 44px;
+        padding-left: 50px;
       }
       @include breakpoint (xxl) {
-        padding-left: 80px;
+        padding-left: 152px;
       }
       &__title {
-        color: #FFF;
-        font-family: "Plus Jakarta Sans";
-        font-size: 20px;
+        color: var(--White, #FFF);
+        font-feature-settings: 'liga' off, 'clig' off;
+        font-family: "DM Sans";
+        font-size: 24px;
         font-style: normal;
         font-weight: 700;
-        line-height: 32px;
-        text-transform: capitalize;
-        padding-bottom: 15px;
+        line-height: 34.91px; /* 145.458% */
+        letter-spacing: -0.25px;
+        padding-bottom: 29px;
+        text-transform: none;
       }
       &-list {
         &__item {    
@@ -523,14 +529,18 @@
             padding-bottom: 13px;
           }
           a {
-            color: var(--Background, #F9F9F9);
-            font-family: "Plus Jakarta Sans";
-            font-size: 16px;
+            color: var(--White, #FFF);
+            font-feature-settings: 'liga' off, 'clig' off;
+            font-family: "DM Sans";
+            font-size: 18px;
             font-style: normal;
-            font-weight: 400;
-            line-height: 26px;
+            font-weight: 500;
+            line-height: 28.01px; /* 155.611% */
             &:hover {
               color: var(--Background, #F9F9F9);
+            }
+            &.fw {
+              font-weight: 700;
             }
           }
         }

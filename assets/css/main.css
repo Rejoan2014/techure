@@ -8331,8 +8331,11 @@ img {
   width: 160px;
   height: 160px;
 }
+.footer2-wrapper-logoInfo {
+  padding-right: 58px;
+}
 .footer2-wrapper-logoInfo__logo {
-  padding-bottom: 15px;
+  padding-bottom: 26px;
 }
 .footer2-wrapper-logoInfo__desc {
   color: var(--Background, #F9F9F9);
@@ -8343,7 +8346,7 @@ img {
   line-height: 30px; /* 166.667% */
 }
 .footer2-wrapper-logoInfo-social {
-  padding-top: 23px;
+  padding-top: 40px;
   display: flex;
   gap: 20px;
 }
@@ -8468,66 +8471,75 @@ img {
 }
 @media (min-width: 1400px) {
   .footer2-wrapper-service {
-    padding-left: 38px;
+    padding-left: 100px;
   }
 }
 .footer2-wrapper-service__title {
-  color: #FFF;
-  font-family: "Plus Jakarta Sans";
-  font-size: 20px;
+  color: var(--White, #FFF);
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: "DM Sans";
+  font-size: 24px;
   font-style: normal;
   font-weight: 700;
-  line-height: 32px;
-  text-transform: capitalize;
-  padding-bottom: 15px;
+  line-height: 34.91px; /* 145.458% */
+  letter-spacing: -0.25px;
+  padding-bottom: 29px;
+  text-transform: none;
 }
 .footer2-wrapper-service-list__item:not(:last-child) {
   padding-bottom: 13px;
 }
 .footer2-wrapper-service-list__item a {
-  color: var(--Background, #F9F9F9);
-  font-family: "Plus Jakarta Sans";
-  font-size: 16px;
+  color: var(--White, #FFF);
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: "DM Sans";
+  font-size: 18px;
   font-style: normal;
-  font-weight: 400;
-  line-height: 26px;
+  font-weight: 500;
+  line-height: 28.01px; /* 155.611% */
 }
 .footer2-wrapper-service-list__item a:hover {
   color: var(--Background, #F9F9F9);
 }
 @media (min-width: 1200px) {
   .footer2-wrapper-contact {
-    padding-left: 44px;
+    padding-left: 50px;
   }
 }
 @media (min-width: 1400px) {
   .footer2-wrapper-contact {
-    padding-left: 80px;
+    padding-left: 152px;
   }
 }
 .footer2-wrapper-contact__title {
-  color: #FFF;
-  font-family: "Plus Jakarta Sans";
-  font-size: 20px;
+  color: var(--White, #FFF);
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: "DM Sans";
+  font-size: 24px;
   font-style: normal;
   font-weight: 700;
-  line-height: 32px;
-  text-transform: capitalize;
-  padding-bottom: 15px;
+  line-height: 34.91px; /* 145.458% */
+  letter-spacing: -0.25px;
+  padding-bottom: 29px;
+  text-transform: none;
 }
 .footer2-wrapper-contact-list__item:not(:last-child) {
   padding-bottom: 13px;
 }
 .footer2-wrapper-contact-list__item a {
-  color: var(--Background, #F9F9F9);
-  font-family: "Plus Jakarta Sans";
-  font-size: 16px;
+  color: var(--White, #FFF);
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: "DM Sans";
+  font-size: 18px;
   font-style: normal;
-  font-weight: 400;
-  line-height: 26px;
+  font-weight: 500;
+  line-height: 28.01px; /* 155.611% */
 }
 .footer2-wrapper-contact-list__item a:hover {
   color: var(--Background, #F9F9F9);
+}
+.footer2-wrapper-contact-list__item a.fw {
+  font-weight: 700;
 }
 .footer2-bottom {
   display: flex;
