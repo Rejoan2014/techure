@@ -2604,7 +2604,7 @@ img {
   display: block;
   height: 2px;
   width: 10px;
-  background: var(--title);
+  background: var(--white);
   margin: auto;
   transition: 0.4s;
 }
@@ -3228,6 +3228,7 @@ img {
 .header-button .phone {
   display: flex;
   gap: 10px;
+  align-items: center;
 }
 .header-button .phone i {
   color: #573DB8;
@@ -3485,7 +3486,7 @@ img {
 }
 @media (max-width: 1199px) {
   .global-menu-toggle {
-    background-color: var(--white);
+    background-color: var(--theme);
   }
 }
 

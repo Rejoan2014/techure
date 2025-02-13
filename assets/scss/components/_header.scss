@@ -4,7 +4,7 @@
     display: block;
     height: 2px;
     width: 10px;
-    background: $title-color;
+    background: $white;
     margin: auto;
     transition: 0.4s;
 
@@ -851,6 +851,7 @@
   .phone {
     display: flex;
     gap: 10px;
+    align-items: center;
     i {
       color: #573DB8;
     }
@@ -1178,7 +1179,7 @@
   }
 
   @include breakpoint (max-xl) {
-    background-color: $white;
+    background-color: $theme-color;
   }
 }
 
