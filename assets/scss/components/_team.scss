@@ -157,6 +157,10 @@
                 width: 360px;
                 height: 360px;
             }
+            @include breakpoint (max-md) {
+                width: 270px;
+                height: 270px;
+            }
         }
         &__thumb {
             position: absolute;
@@ -167,6 +171,11 @@
                 @include breakpoint (max-xxl) {
                     img {
                         max-width: 90%;
+                    }
+                }
+                @include breakpoint (max-sm) {
+                    img {
+                        max-width: 55%;
                     }
                 }
            
@@ -180,6 +189,11 @@
                         max-width: 90%;
                     }
                 }
+                @include breakpoint (max-sm) {
+                    img {
+                        max-width: 55%;
+                    }
+                }
            
             }
             &.three {
@@ -189,6 +203,11 @@
                 @include breakpoint (max-xxl) {
                     img {
                         max-width: 83%;
+                    }
+                }
+                @include breakpoint (max-sm) {
+                    img {
+                        max-width: 55%;
                     }
                 }
             }
@@ -201,6 +220,11 @@
                         max-width: 83%;
                     }
                 }
+                @include breakpoint (max-sm) {
+                    img {
+                        max-width: 55%;
+                    }
+                }
             }
             &.five {
                 position: absolute;
@@ -209,6 +233,11 @@
                 @include breakpoint (max-xxl) {
                     img {
                         max-width: 87%;
+                    }
+                }
+                @include breakpoint (max-sm) {
+                    img {
+                        max-width: 55%;
                     }
                 }
             }
