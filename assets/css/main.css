@@ -8393,6 +8393,65 @@ img {
 .footer2-wrapper-link-list__item a:hover {
   color: var(--Background, #F9F9F9);
 }
+.footer2-wrapper-subscribe {
+  border-radius: 10px;
+  background: rgba(254, 254, 254, 0.1);
+  padding: 38px 25px;
+  height: 200px;
+}
+@media (min-width: 1200px) {
+  .footer2-wrapper-subscribe {
+    margin-left: 85px;
+  }
+}
+.footer2-wrapper-subscribe__title {
+  color: #FFF;
+  font-family: Oswald;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26px; /* 130% */
+  letter-spacing: -0.4px;
+  text-transform: uppercase;
+  padding-bottom: 26px;
+}
+.footer2-wrapper-subscribe-form {
+  position: relative;
+}
+.footer2-wrapper-subscribe-form__input {
+  border-radius: 999px;
+  background: var(--Gray-700, #2E3137);
+  width: 100%;
+  height: 50px;
+  padding: 21px 30px;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  color: var(--Black-Forest, #595959);
+  font-family: "Plus Jakarta Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+}
+.footer2-wrapper-subscribe-form__button {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+.footer2-wrapper-subscribe-form__button i {
+  padding: 8px;
+  border-radius: 0px 999px 999px 0px;
+  background: var(--Home-Primary, #573DB8);
+  display: flex;
+  width: 50px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  color: #FFF;
+}
 @media (min-width: 1200px) {
   .footer2-wrapper-service {
     padding-left: 44px;
@@ -8469,6 +8528,11 @@ img {
   border-top: 1px solid rgba(254, 254, 254, 0.3);
   padding-top: 21px;
 }
+@media (min-width: 768px) {
+  .footer2-bottom {
+    flex-direction: row;
+  }
+}
 .footer2-bottom p {
   color: var(--White, #FEFEFE);
   font-family: "Plus Jakarta Sans";
@@ -8481,6 +8545,25 @@ img {
   .footer2-bottom p {
     font-size: 18px;
   }
+}
+.footer2-bottom__links a {
+  color: var(--White, #FEFEFE);
+  font-family: "Plus Jakarta Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+}
+@media (min-width: 768px) {
+  .footer2-bottom__links a {
+    font-size: 18px;
+  }
+}
+.footer2-bottom__links a:not(:last-child) {
+  padding-right: 20px;
+}
+.footer2-bottom__links a:hover {
+  color: white;
 }
 
 .footer3 {
