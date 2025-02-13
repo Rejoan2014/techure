@@ -7832,10 +7832,13 @@ img {
   text-align: center;
   font-size: 18px;
   display: inline-block;
-  background-color: var(--theme);
-  color: var(--white);
+  background-color: var(--white);
+  color: var(--title);
   transition: all 0.4s ease-in-out;
   border-radius: 50%;
+}
+.social-profile .plus-btn:hover {
+  background-color: #8FD45F;
 }
 .social-profile:hover ul {
   transform: translateY(-10%);
