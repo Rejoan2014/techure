@@ -1204,6 +1204,14 @@ img {
   font-size: 16px;
 }
 
+.brt {
+  border-top: 1px solid #ECECEC;
+}
+
+.brt2 {
+  border-top: 1px solid rgb(199, 193, 204);
+}
+
 /* 07.Animation */
 /*----------------------------------------------
     # All Animation style here
@@ -6241,8 +6249,10 @@ img {
   border-radius: 20px;
   border: 1px solid rgba(7, 0, 14, 0.2);
   background: var(--Gray-100, #F7F1FC);
-  margin-bottom: 24px;
   padding: 38px 34px 35px 60px;
+}
+.service4-card:not(:last-child) {
+  margin-bottom: 24px;
 }
 @media (max-width: 991px) {
   .service4-card {

@@ -334,8 +334,10 @@
         border-radius: 20px;
         border: 1px solid rgba(7, 0, 14, 0.20);
         background: var(--Gray-100, #F7F1FC);
-        margin-bottom: 24px;
         padding: 38px 34px 35px 60px;
+        &:not(:last-child) {
+            margin-bottom: 24px;
+        }
 
         
         @include breakpoint (max-lg) {
