@@ -388,6 +388,32 @@
 }
 
 .hero {
+    position: relative;
+    &-shape3 {
+        position: absolute;
+        top: 23%;
+        left: 19%;
+        border-radius: 412px;
+        opacity: 0.27;
+        background: var(--Home-Secondary, #8FD45F);
+        filter: blur(142px);
+        width: 412px;
+        height: 412px;
+        flex-shrink: 0;
+        z-index: 9;
+    }
+    &-shape4 {
+        position: absolute;
+        right: 6%;
+        bottom: 17%;
+        width: 412px;
+        height: 412px;
+        flex-shrink: 0;
+        border-radius: 412px;
+        opacity: 0.2;
+        background: var(--Home-Primary, #573DB8);
+        filter: blur(142px);
+    }
     &__title {
         h1 {
             color: var(--Gray-900, #07000E);
@@ -401,10 +427,31 @@
             span {
                 font-weight: 900;
             }
+            @include breakpoint (max-xl) {
+                font-size: 75px;
+                line-height: 70px;
+            }
+            @include breakpoint (max-lg) {
+                font-size: 61px;
+                line-height: 70px;
+            }
+            @include breakpoint (max-sm) {
+                font-size: 46px;
+                line-height: 57px;
+            }
         }
     }
     &-content {
         padding-bottom: 50px;
+
+        @include breakpoint (max-xl) {
+            max-width: 380px;
+            padding-top: 50px;
+        }
+        @include breakpoint (max-lg) {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
         &-thumb {
             position: relative;
             padding-bottom: 27px;
@@ -414,6 +461,28 @@
                 top: 50%;
                 transform: translate(-50%, -50%);
                 z-index: 6;
+
+                @include breakpoint (max-xl) {
+                    position: absolute;
+                    left: 27%;
+                    top: 40%;
+                    transform: translate(-50%, -50%);
+                    z-index: 6;
+                }
+                @include breakpoint (max-xsmall) {
+                    position: absolute;
+                    left: 30%;
+                    top: 40%;
+                    transform: translate(-50%, -50%);
+                    z-index: 6;
+                }
+                @include breakpoint (max-xxsmall) {
+                    position: absolute;
+                    left: 36%;
+                    top: 40%;
+                    transform: translate(-50%, -50%);
+                    z-index: 6;
+                }
             }
         }
         &__desc {
@@ -477,17 +546,45 @@
                 line-height: 20px; 
                 letter-spacing: -0.25px;
             }
+            @include breakpoint (max-sm) {
+                display: none;
+            }
         }
         &__shape1 {
             position: absolute;
             bottom: 0;
             z-index: 3;
+
+            @include breakpoint (max-xl) {
+                position: absolute;
+                bottom: 0;
+                left: 16%;
+                z-index: 3;
+            }
+            @include breakpoint (max-lg) {
+                position: absolute;
+                bottom: 0;
+                left: 3%;
+                z-index: 3;
+            }
+            @include breakpoint (max-md) {
+                position: absolute;
+                bottom: 0;
+                left: -4%;
+                z-index: 3;
+            }
+            @include breakpoint (max-sm) {
+                display: none;
+            }
         }
         &__shape2 {
             position: absolute;
             bottom: 0;
             left: 38%;
             z-index: 5;
+            @include breakpoint (max-sm) {
+                display: none;
+            }
         }
     }
 }
