@@ -241,6 +241,7 @@
 }
 
 .footer2 {
+  padding-top: 80px;
   position: relative;
   &-wrapper {   
     display: flex;
@@ -253,16 +254,18 @@
       align-items: center;
       justify-content: space-between;
       gap: 30px;
-      padding-bottom: 80px;
+      padding-bottom: 9px;
+      margin-bottom: 40px;
       @include breakpoint (sm){
         gap: 35px;
       }
       @include breakpoint (md){
         flex-direction: row;
         gap: 100px;
+         border-bottom: 1px solid rgb(57, 51, 62);
       }
       @include breakpoint (lg){
-        padding-bottom: 114px;
+        padding-bottom: 9px;
       }
 
       &__text {
@@ -271,10 +274,10 @@
           color: var(--White, #FFF);
           font-feature-settings: 'liga' off, 'clig' off;
           font-family: "DM Sans";
-          font-size: 72px;
+          font-size: 56px;
           font-style: normal;
           font-weight: 700;
-          line-height: 72px; /* 100% */
+          line-height: 50px; /* 100% */
           letter-spacing: -2px;
           padding-bottom: 15px;
           max-width: 700px;
@@ -553,19 +556,20 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    border-top: 1px solid rgba(254, 254, 254, 0.30);
+    border-top: 1px solid rgb(57, 51, 62);
     padding-top: 21px;
     @include breakpoint (md){
       flex-direction: row;
     }
 
     p {
-      color: var(--White, #FEFEFE);
-      font-family: "Plus Jakarta Sans";
+      color: var(--White, #FFF);
+      font-feature-settings: 'liga' off, 'clig' off;
+      font-family: "DM Sans";
       font-size: 14px;
       font-style: normal;
-      font-weight: 400;
-      line-height: 30px; 
+      font-weight: 500;
+      line-height: 28.01px; /* 155.611% */
       @include breakpoint (md){
         font-size: 18px;
 
@@ -574,12 +578,13 @@
 
     &__links {
       a {
-        color: var(--White, #FEFEFE);
-        font-family: "Plus Jakarta Sans";
+        color: var(--White, #FFF);
+        font-feature-settings: 'liga' off, 'clig' off;
+        font-family: "DM Sans";
         font-size: 14px;
         font-style: normal;
         font-weight: 500;
-        line-height: 30px;
+        line-height: 28.01px; /* 155.611% */
         @include breakpoint (md){
           font-size: 18px;
   

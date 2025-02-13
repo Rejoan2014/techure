@@ -1023,7 +1023,7 @@ span a {
 }
 @media (min-width: 1400px) {
   .pt-128 {
-    padding-top: 128px;
+    padding-top: 75px;
   }
 }
 
@@ -8242,6 +8242,7 @@ img {
 }
 
 .footer2 {
+  padding-top: 80px;
   position: relative;
 }
 .footer2-wrapper {
@@ -8255,7 +8256,8 @@ img {
   align-items: center;
   justify-content: space-between;
   gap: 30px;
-  padding-bottom: 80px;
+  padding-bottom: 9px;
+  margin-bottom: 40px;
 }
 @media (min-width: 576px) {
   .footer2-wrapper-content {
@@ -8266,11 +8268,12 @@ img {
   .footer2-wrapper-content {
     flex-direction: row;
     gap: 100px;
+    border-bottom: 1px solid rgb(57, 51, 62);
   }
 }
 @media (min-width: 992px) {
   .footer2-wrapper-content {
-    padding-bottom: 114px;
+    padding-bottom: 9px;
   }
 }
 .footer2-wrapper-content__text {
@@ -8280,10 +8283,10 @@ img {
   color: var(--White, #FFF);
   font-feature-settings: "liga" off, "clig" off;
   font-family: "DM Sans";
-  font-size: 72px;
+  font-size: 56px;
   font-style: normal;
   font-weight: 700;
-  line-height: 72px; /* 100% */
+  line-height: 50px; /* 100% */
   letter-spacing: -2px;
   padding-bottom: 15px;
   max-width: 700px;
@@ -8546,7 +8549,7 @@ img {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  border-top: 1px solid rgba(254, 254, 254, 0.3);
+  border-top: 1px solid rgb(57, 51, 62);
   padding-top: 21px;
 }
 @media (min-width: 768px) {
@@ -8555,12 +8558,13 @@ img {
   }
 }
 .footer2-bottom p {
-  color: var(--White, #FEFEFE);
-  font-family: "Plus Jakarta Sans";
+  color: var(--White, #FFF);
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: "DM Sans";
   font-size: 14px;
   font-style: normal;
-  font-weight: 400;
-  line-height: 30px;
+  font-weight: 500;
+  line-height: 28.01px; /* 155.611% */
 }
 @media (min-width: 768px) {
   .footer2-bottom p {
@@ -8568,12 +8572,13 @@ img {
   }
 }
 .footer2-bottom__links a {
-  color: var(--White, #FEFEFE);
-  font-family: "Plus Jakarta Sans";
+  color: var(--White, #FFF);
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: "DM Sans";
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
-  line-height: 30px;
+  line-height: 28.01px; /* 155.611% */
 }
 @media (min-width: 768px) {
   .footer2-bottom__links a {
