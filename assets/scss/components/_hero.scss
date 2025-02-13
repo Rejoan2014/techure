@@ -414,6 +414,14 @@
         background: var(--Home-Primary, #573DB8);
         filter: blur(142px);
     }
+    &-shape5 {
+        position: absolute;
+        left: 4%;
+        bottom: 42%;
+        @include breakpoint (max-xxxl) {
+            display: none;
+        }
+    }
     &__title {
         h1 {
             color: var(--Gray-900, #07000E);
@@ -458,7 +466,7 @@
             &__playIcon {
                 position: absolute;
                 left: 33%;
-                top: 50%;
+                top: 41%;
                 transform: translate(-50%, -50%);
                 z-index: 6;
 
