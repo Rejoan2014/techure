@@ -4162,6 +4162,51 @@ img {
   line-height: 28.01px;
 }
 
+.counter-item2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.counter-item2-box {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+.counter-item2-box:not(:last-child) {
+  border-bottom: 1px solid #573DB8;
+}
+.counter-item2-box__value {
+  color: var(--Gray-900, #07000E);
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: "DM Sans";
+  font-size: 73.407px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 73.407px;
+  letter-spacing: -2.039px;
+  padding-bottom: 7px;
+  padding-right: 20px;
+}
+@media (max-width: 991px) {
+  .counter-item2-box__value {
+    font-size: 52px;
+  }
+}
+.counter-item2-box__label p {
+  color: var(--Gray-800, #716F73);
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: "DM Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28.01px;
+}
+
 /*----------------------------------------------
     # Buttons style here
 ----------------------------------------------*/
