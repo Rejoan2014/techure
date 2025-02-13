@@ -153,31 +153,64 @@
             border: 1px solid rgb(199, 193, 204);
             width: 410px;
             height: 410px;
+            @include breakpoint (max-xxl) {
+                width: 360px;
+                height: 360px;
+            }
         }
         &__thumb {
             position: absolute;
             top: -16px;
             left: 13%;
 
+            &.one {
+                @include breakpoint (max-xxl) {
+                    img {
+                        max-width: 90%;
+                    }
+                }
+           
+            }
             &.two {
                 position: absolute;
                 top: 6px;
                 left: 20%;
+                @include breakpoint (max-xxl) {
+                    img {
+                        max-width: 90%;
+                    }
+                }
+           
             }
             &.three {
                 position: absolute;
                 top: 15px;
                 left: 4%;
+                @include breakpoint (max-xxl) {
+                    img {
+                        max-width: 83%;
+                    }
+                }
             }
             &.four {
                 position: absolute;
                 top: -7px;
                 left: 10%;
+                @include breakpoint (max-xxl) {
+                    img {
+                        max-width: 83%;
+                    }
+                }
             }
             &.five {
                 position: absolute;
                 top: -3px;
                 left: 0%;
+                @include breakpoint (max-xxl) {
+                    img {
+                        max-width: 87%;
+                    }
+                }
             }
         }
         &-shape {

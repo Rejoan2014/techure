@@ -7731,30 +7731,61 @@ img {
   width: 410px;
   height: 410px;
 }
+@media (max-width: 1399px) {
+  .team-card-circle {
+    width: 360px;
+    height: 360px;
+  }
+}
 .team-card__thumb {
   position: absolute;
   top: -16px;
   left: 13%;
+}
+@media (max-width: 1399px) {
+  .team-card__thumb.one img {
+    max-width: 90%;
+  }
 }
 .team-card__thumb.two {
   position: absolute;
   top: 6px;
   left: 20%;
 }
+@media (max-width: 1399px) {
+  .team-card__thumb.two img {
+    max-width: 90%;
+  }
+}
 .team-card__thumb.three {
   position: absolute;
   top: 15px;
   left: 4%;
+}
+@media (max-width: 1399px) {
+  .team-card__thumb.three img {
+    max-width: 83%;
+  }
 }
 .team-card__thumb.four {
   position: absolute;
   top: -7px;
   left: 10%;
 }
+@media (max-width: 1399px) {
+  .team-card__thumb.four img {
+    max-width: 83%;
+  }
+}
 .team-card__thumb.five {
   position: absolute;
   top: -3px;
   left: 0%;
+}
+@media (max-width: 1399px) {
+  .team-card__thumb.five img {
+    max-width: 87%;
+  }
 }
 .team-card-shape {
   position: absolute;
