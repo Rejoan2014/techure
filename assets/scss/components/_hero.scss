@@ -388,7 +388,23 @@
 }
 
 .hero {
+    &__title {
+        h1 {
+            color: var(--Gray-900, #07000E);
+            font-feature-settings: 'liga' off, 'clig' off;
+            font-family: "DM Sans";
+            font-size: 90px;
+            font-style: normal;
+            font-weight: 200;
+            line-height: 100px;
+            letter-spacing: -2.25px;
+            span {
+                font-weight: 900;
+            }
+        }
+    }
     &-content {
+        padding-bottom: 50px;
         &-thumb {
             position: relative;
             padding-bottom: 27px;
