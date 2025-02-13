@@ -8345,17 +8345,27 @@ img {
 .footer2-wrapper-logoInfo-social {
   padding-top: 23px;
   display: flex;
-  gap: 8px;
+  gap: 20px;
 }
 .footer2-wrapper-logoInfo-social__item a {
   display: flex;
-  width: 44px;
-  height: 44px;
+  width: 37px;
+  height: 36px;
   justify-content: center;
   align-items: center;
   gap: 10px;
   border-radius: 50px;
+  border: 1px solid #573DB8;
   background: var(--Gray-900, #07000E);
+}
+.footer2-wrapper-logoInfo-social__item a:hover {
+  background: var(--color, var(--theme));
+}
+.footer2-wrapper-logoInfo-social__item a:hover i {
+  color: var(--white);
+}
+.footer2-wrapper-logoInfo-social__item a:hover svg path {
+  fill: var(--white);
 }
 @media (min-width: 1200px) {
   .footer2-wrapper-link {

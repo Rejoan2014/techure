@@ -337,27 +337,31 @@
       &-social {
         padding-top: 23px;
         display: flex;
-        gap: 8px;
+        gap: 20px;
         &__item {
           a {
             display: flex;
-            width: 44px;
-            height: 44px;
+            width: 37px;
+            height: 36px;
             justify-content: center;
             align-items: center;
             gap: 10px;
             border-radius: 50px;
+            border: 1px solid #573DB8;
 
             background: var(--Gray-900, #07000E);
       
-            // &:hover {
-            //   background: var(--color, #F3604C);
-            //   svg {
-            //     path {
-            //       fill: $white;
-            //     }
-            //   }
-            // }
+            &:hover {
+              i {
+                color: $white;
+              }
+              background: var(--color, $theme-color);
+              svg {
+                path {
+                  fill: $white;
+                }
+              }
+            }
           }
         }
       }
