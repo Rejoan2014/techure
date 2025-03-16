@@ -207,11 +207,13 @@
             }
         }
         &-title {
-            h3 {
-                position: absolute;
-                left: 24%;
-                bottom: 10%;
-    
+            position: absolute;
+            left: 24%;
+            bottom: 10%;
+            @include breakpoint (max-lg){
+                bottom: 6%;
+            }
+            h3 {    
                 color: var(--White, #FFF);
                 text-align: center;
                 font-feature-settings: 'liga' off, 'clig' off;
@@ -221,6 +223,12 @@
                 font-weight: 700;
                 line-height: 34.91px; /* 145.458% */
                 letter-spacing: -0.25px;
+                @include breakpoint (max-xl){
+                    font-size: 20px;
+                }
+                @include breakpoint (max-lg){
+                    font-size: 14px;
+                }
             }
         }
     }
@@ -265,6 +273,7 @@
     }
   
     ul {
+        background-color: $white;
       max-width: 50px;
       padding: 5px 0;
       margin: 0 auto;
@@ -306,12 +315,7 @@
           border-radius: 50%;
           -moz-transition: all .4s ease-in-out;
           -ms-transition: all .4s ease-in-out;
-          -o-transition: all .4s ease-in-out;
-  
-          &:hover {
-            background-color: $theme-color;
-            color: $white;
-          }
+          -o-transition: all .4s ease-in-out;  
         }
       }
     }

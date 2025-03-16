@@ -7802,10 +7802,17 @@ img {
     left: -67%;
   }
 }
-.team-card-title h3 {
+.team-card-title {
   position: absolute;
   left: 24%;
   bottom: 10%;
+}
+@media (max-width: 991px) {
+  .team-card-title {
+    bottom: 6%;
+  }
+}
+.team-card-title h3 {
   color: var(--White, #FFF);
   text-align: center;
   font-feature-settings: "liga" off, "clig" off;
@@ -7815,6 +7822,16 @@ img {
   font-weight: 700;
   line-height: 34.91px; /* 145.458% */
   letter-spacing: -0.25px;
+}
+@media (max-width: 1199px) {
+  .team-card-title h3 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 991px) {
+  .team-card-title h3 {
+    font-size: 14px;
+  }
 }
 
 .social-profile {
@@ -7857,6 +7874,7 @@ img {
   }
 }
 .social-profile ul {
+  background-color: var(--white);
   max-width: 50px;
   padding: 5px 0;
   margin: 0 auto;
@@ -7898,10 +7916,6 @@ img {
   -moz-transition: all 0.4s ease-in-out;
   -ms-transition: all 0.4s ease-in-out;
   -o-transition: all 0.4s ease-in-out;
-}
-.social-profile ul li a:hover {
-  background-color: var(--theme);
-  color: var(--white);
 }
 .social-profile .plus-btn {
   z-index: 2;
