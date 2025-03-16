@@ -7731,6 +7731,7 @@ img {
 }
 @media (max-width: 575px) {
   .team-card {
+    display: inline-block;
     max-width: 237px;
   }
 }
@@ -7759,6 +7760,12 @@ img {
 @media (max-width: 767px) {
   .team-card__thumb img {
     width: 179.417px;
+    height: 243px;
+  }
+}
+@media (max-width: 575px) {
+  .team-card__thumb img {
+    width: 240.417px;
     height: 243px;
   }
 }
@@ -7857,19 +7864,19 @@ img {
 }
 @media (max-width: 1199px) {
   .social-profile {
-    right: 40%;
+    right: 43%;
     top: 20%;
   }
 }
 @media (max-width: 991px) {
   .social-profile {
-    right: 37%;
+    right: 40%;
     top: 0%;
   }
 }
 @media (max-width: 767px) {
   .social-profile {
-    right: 37%;
+    right: 40%;
     top: 9%;
   }
 }
