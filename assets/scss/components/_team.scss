@@ -151,10 +151,29 @@
         position: relative;
         border-radius: 410px;
         border: 1px solid rgb(199, 193, 204);
+        @include breakpoint (max-sm){
+            max-width: 237px;
+        }
         &__thumb {
             img {
                 width: 319.417px;
                 height: 408px;
+                @include breakpoint (max-xxl){
+                    width: 276.417px;
+                    height: 355px;
+                }
+                @include breakpoint (max-xl){
+                    width: 240.417px;
+                    height: 298px;
+                }
+                @include breakpoint (max-lg){
+                    width: 240.417px;
+                    height: 210px;
+                }
+                @include breakpoint (max-md){
+                    width: 179.417px;
+                    height: 243px;
+                }
             }          
         }
         &-shape {
@@ -165,7 +184,27 @@
             background: var(--Home-Primary, #573DB8);
             width: 572px;
             height: 572px;
-            flex-shrink: 0;
+            flex-shrink: 0; 
+            @include breakpoint (max-xxl){
+                bottom: -137%;
+                left: -26%;
+            }
+            @include breakpoint (max-xl){
+                bottom: -162%;
+                left: -45%;
+            }
+            @include breakpoint (max-lg){
+                bottom: -244%;
+                left: -79%;
+            }
+            @include breakpoint (max-md){
+                bottom: -207%;
+                left: -63%;
+            }
+            @include breakpoint (max-sm){
+                bottom: -207%;
+                left: -67%;
+            }
         }
         &-title {
             h3 {
@@ -212,6 +251,18 @@
     -moz-transition: all .4s ease-in-out;
     -ms-transition: all .4s ease-in-out;
     -o-transition: all .4s ease-in-out;
+    @include breakpoint (max-xl){
+        right: 40%;
+        top: 20%;
+    }
+    @include breakpoint (max-lg){
+        right: 37%;
+        top: 0%;
+    }
+    @include breakpoint (max-md){
+        right: 37%;
+        top: 9%;
+    }
   
     ul {
       max-width: 50px;
