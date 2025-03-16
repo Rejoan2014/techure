@@ -7724,104 +7724,24 @@ img {
 }
 
 .team-card {
+  overflow: hidden;
   position: relative;
-}
-.team-card-circle {
   border-radius: 410px;
   border: 1px solid rgb(199, 193, 204);
-  width: 410px;
-  height: 410px;
 }
-@media (max-width: 1399px) {
-  .team-card-circle {
-    width: 360px;
-    height: 360px;
-  }
-}
-@media (max-width: 767px) {
-  .team-card-circle {
-    width: 270px;
-    height: 270px;
-  }
-}
-.team-card__thumb {
-  position: absolute;
-  top: -16px;
-  left: 13%;
-}
-@media (max-width: 1399px) {
-  .team-card__thumb.one img {
-    max-width: 90%;
-  }
-}
-@media (max-width: 575px) {
-  .team-card__thumb.one img {
-    max-width: 55%;
-  }
-}
-.team-card__thumb.two {
-  position: absolute;
-  top: 6px;
-  left: 20%;
-}
-@media (max-width: 1399px) {
-  .team-card__thumb.two img {
-    max-width: 90%;
-  }
-}
-@media (max-width: 575px) {
-  .team-card__thumb.two img {
-    max-width: 55%;
-  }
-}
-.team-card__thumb.three {
-  position: absolute;
-  top: 15px;
-  left: 4%;
-}
-@media (max-width: 1399px) {
-  .team-card__thumb.three img {
-    max-width: 83%;
-  }
-}
-@media (max-width: 575px) {
-  .team-card__thumb.three img {
-    max-width: 55%;
-  }
-}
-.team-card__thumb.four {
-  position: absolute;
-  top: -7px;
-  left: 10%;
-}
-@media (max-width: 1399px) {
-  .team-card__thumb.four img {
-    max-width: 83%;
-  }
-}
-@media (max-width: 575px) {
-  .team-card__thumb.four img {
-    max-width: 55%;
-  }
-}
-.team-card__thumb.five {
-  position: absolute;
-  top: -3px;
-  left: 0%;
-}
-@media (max-width: 1399px) {
-  .team-card__thumb.five img {
-    max-width: 87%;
-  }
-}
-@media (max-width: 575px) {
-  .team-card__thumb.five img {
-    max-width: 55%;
-  }
+.team-card__thumb img {
+  width: 319.417px;
+  height: 408px;
 }
 .team-card-shape {
   position: absolute;
-  bottom: 0;
+  bottom: -112%;
+  left: -17%;
+  border-radius: 572px;
+  background: var(--Home-Primary, #573DB8);
+  width: 572px;
+  height: 572px;
+  flex-shrink: 0;
 }
 .team-card-title h3 {
   position: absolute;
@@ -8933,4 +8853,4 @@ img {
   .story-brandLogo-slider {
     padding: 30px;
   }
-}/*# sourceMappingURL=main.css.map */
+}

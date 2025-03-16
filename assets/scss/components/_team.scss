@@ -147,104 +147,25 @@
 }
 .team {
     &-card {
+        overflow: hidden;
         position: relative;
-        &-circle {
-            border-radius: 410px;
-            border: 1px solid rgb(199, 193, 204);
-            width: 410px;
-            height: 410px;
-            @include breakpoint (max-xxl) {
-                width: 360px;
-                height: 360px;
-            }
-            @include breakpoint (max-md) {
-                width: 270px;
-                height: 270px;
-            }
-        }
+        border-radius: 410px;
+        border: 1px solid rgb(199, 193, 204);
         &__thumb {
-            position: absolute;
-            top: -16px;
-            left: 13%;
-
-            &.one {
-                @include breakpoint (max-xxl) {
-                    img {
-                        max-width: 90%;
-                    }
-                }
-                @include breakpoint (max-sm) {
-                    img {
-                        max-width: 55%;
-                    }
-                }
-           
-            }
-            &.two {
-                position: absolute;
-                top: 6px;
-                left: 20%;
-                @include breakpoint (max-xxl) {
-                    img {
-                        max-width: 90%;
-                    }
-                }
-                @include breakpoint (max-sm) {
-                    img {
-                        max-width: 55%;
-                    }
-                }
-           
-            }
-            &.three {
-                position: absolute;
-                top: 15px;
-                left: 4%;
-                @include breakpoint (max-xxl) {
-                    img {
-                        max-width: 83%;
-                    }
-                }
-                @include breakpoint (max-sm) {
-                    img {
-                        max-width: 55%;
-                    }
-                }
-            }
-            &.four {
-                position: absolute;
-                top: -7px;
-                left: 10%;
-                @include breakpoint (max-xxl) {
-                    img {
-                        max-width: 83%;
-                    }
-                }
-                @include breakpoint (max-sm) {
-                    img {
-                        max-width: 55%;
-                    }
-                }
-            }
-            &.five {
-                position: absolute;
-                top: -3px;
-                left: 0%;
-                @include breakpoint (max-xxl) {
-                    img {
-                        max-width: 87%;
-                    }
-                }
-                @include breakpoint (max-sm) {
-                    img {
-                        max-width: 55%;
-                    }
-                }
-            }
+            img {
+                width: 319.417px;
+                height: 408px;
+            }          
         }
         &-shape {
             position: absolute;
-            bottom: 0;
+            bottom: -112%;
+            left: -17%;
+            border-radius: 572px;
+            background: var(--Home-Primary, #573DB8);
+            width: 572px;
+            height: 572px;
+            flex-shrink: 0;
         }
         &-title {
             h3 {
