@@ -139,3 +139,33 @@ gsap.utils.toArray('.slideUpFadeIn').forEach((element) => {
         }
     });
 });
+
+// gsap.utils.toArray('.fadeUpInstant').forEach((element) => {
+//     gsap.from(element, {
+//         opacity: 0,
+//         y: 50,
+//         duration: 2,
+//         ease: "power2.out",
+//         stagger: 0.5,
+//         scrollTrigger: {
+//             trigger: element,
+//             start: "top 85%",
+//             toggleActions: "play none none reverse"
+//         }
+//     });
+// });
+
+// Animate for elements individually.
+gsap.from('.fadeUpInstant', {
+    opacity: 0,
+    y: 50, 
+    duration: 1,
+    ease: "power2.out",
+    stagger: 0.5,
+    scrollTrigger: {
+        trigger: '.fadeUpInstant',
+        start: "top 80%",
+        toggleActions: "play none none reverse"
+    }
+});
+
