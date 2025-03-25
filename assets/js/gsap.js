@@ -6,9 +6,9 @@ gsap.utils.toArray('.fade-up').forEach((element) => {
         stagger: 0.5, 
         scrollTrigger: {
             trigger: element,
-            start: "top 80%", 
+            start: "top 85%", 
             toggleActions: "play none none reverse",
-            markers: true, 
+            // markers: true, 
         }
     });
 });
@@ -164,6 +164,41 @@ gsap.from('.fadeUpInstant', {
     stagger: 0.5,
     scrollTrigger: {
         trigger: '.fadeUpInstant',
+        start: "top 80%",
+        toggleActions: "play none none reverse"
+    }
+});
+
+
+
+
+
+
+
+
+
+// custom class using same to fadeUpInstant
+gsap.from('.service-card', {
+    opacity: 0,
+    y: 50, 
+    duration: 1,
+    ease: "power2.out",
+    stagger: 0.5,
+    scrollTrigger: {
+        trigger: '.service-card',
+        start: "top 80%",
+        toggleActions: "play none none reverse"
+    }
+});
+
+gsap.from('.blog1-card', {
+    opacity: 0,
+    y: 50, 
+    duration: 1,
+    ease: "power2.out",
+    stagger: 0.5,
+    scrollTrigger: {
+        trigger: '.blog1-card',
         start: "top 80%",
         toggleActions: "play none none reverse"
     }
