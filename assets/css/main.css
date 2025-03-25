@@ -2381,6 +2381,51 @@ img {
   align-items: center;
   gap: 10px;
 }
+.btn-wrapper .group-btn.style1:before {
+  content: "";
+  background-color: var(--green);
+  width: 0;
+  height: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  -webkit-transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  -moz-transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  -ms-transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  -o-transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+.btn-wrapper .group-btn.style1:after {
+  content: "";
+  background-color: var(--green);
+  width: 0;
+  height: 50%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  -webkit-transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  -moz-transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  -ms-transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  -o-transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+.btn-wrapper .group-btn.style1 i {
+  margin-left: 10px;
+}
+.btn-wrapper .group-btn.style1:hover {
+  background-color: var(--theme2);
+  color: var(--title) !important;
+  border-radius: 60px;
+  -webkit-border-radius: 60px;
+  -moz-border-radius: 60px;
+  -ms-border-radius: 60px;
+  -o-border-radius: 60px;
+}
+.btn-wrapper .group-btn.style1:hover::before, .btn-wrapper .group-btn.style1:hover::after {
+  width: 100%;
+}
 .btn-wrapper .group-btn.style2 img {
   border-radius: 999px;
   background: var(--Home-Primary, #573DB8);

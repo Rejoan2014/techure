@@ -148,6 +148,55 @@
             justify-content: center;
             align-items: center;
             gap: 10px;
+
+            &:before {
+                content: "";
+                background-color: $green-color; 
+                width: 0;
+                height: 50%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: -1;
+                -webkit-transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+                transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+                -moz-transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+                -ms-transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+                -o-transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+            }
+        
+            &:after {
+                content: "";
+                background-color: $green-color; 
+                width: 0;
+                height: 50%;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                z-index: -1;
+                -webkit-transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+                transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+                -moz-transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+                -ms-transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+                -o-transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+        }
+        
+            i {
+                margin-left: 10px;
+            }
+        
+            &:hover {
+                background-color: $theme-color-2;
+                color: $title-color!important;     
+                border-radius: 60px;
+                -webkit-border-radius: 60px;
+                -moz-border-radius: 60px;
+                -ms-border-radius: 60px;
+                -o-border-radius: 60px; 
+                &::before,&::after {
+                    width: 100%;        
+                }
+            }
         } 
         &.style2 {
             img {
