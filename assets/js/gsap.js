@@ -223,12 +223,14 @@ gsap.from('.main-menu > ul > li', {
     stagger: 0.5
 });
 
+
+// Hero thumb shape animation
 gsap.from(".hero-thumb__shape1, .hero-thumb__shape2", {
     y: -100, 
     opacity: 0,
-    duration: 0.1, 
-    delay:0,
-    ease: "power2.out", 
+    duration: 1.3, 
+    delay: 0,
+    ease: "elastic.out(1, 0.75)",
     stagger: 1,
     scrollTrigger: {
         trigger: ".hero-thumb", 
@@ -236,3 +238,26 @@ gsap.from(".hero-thumb__shape1, .hero-thumb__shape2", {
         toggleActions: "play none none reverse"
     }
 });
+
+// gsap.from(".hero-thumb__shape1", {
+//     x: -200, // Start position to the left (adjust as needed)
+//     opacity: 0,
+//     duration: 1.5,
+//     ease: "elastic.out(1, 0.75)", 
+//     scrollTrigger: {
+//         trigger: ".hero-thumb", 
+//         start: "top 80%",
+//         toggleActions: "play none none reverse"
+//     }
+// });
+// gsap.from(".hero-thumb__shape2", {
+//     x: 200, // Start position to the left (adjust as needed)
+//     opacity: 0,
+//     duration: 1.5,
+//     ease: "elastic.out(1, 0.75)",
+//     scrollTrigger: {
+//         trigger: ".hero-thumb", 
+//         start: "top 80%",
+//         toggleActions: "play none none reverse"
+//     }
+// });
