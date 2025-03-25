@@ -521,6 +521,25 @@
           );
       });
 
+      /*-----------------------------------
+      05. Smooth Wrapper
+  -----------------------------------*/
+          if ($('#smooth-wrapper').length && $('#smooth-content').length) {
+            gsap.registerPlugin(ScrollTrigger, ScrollSmoother, TweenMax, ScrollToPlugin);
+
+            gsap.config({
+                nullTargetWarn: false,
+            });
+
+            let smoother = ScrollSmoother.create({
+                smooth: 2,
+                effects: true,
+                smoothTouch: true,
+                normalizeScroll: false,
+                ignoreMobileResize: true,
+            });
+        }
+
 
   }); // End Document Ready Function
 
