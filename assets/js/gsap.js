@@ -212,3 +212,21 @@ gsap.to(".rotate360", {
     yoyo: false,
     repeatDelay: 0 
 });
+
+
+// Fade-in and slide down animation for main menu (excluding buttons)
+gsap.from('.main-menu > ul > li', {
+    opacity: 0,
+    y: 50,
+    duration: .5,
+    ease: "power2.out",
+    stagger: 0.5
+});
+gsap.from('.header-button', {
+    opacity: 0,
+    y: 50,
+    duration: .5,
+    ease: "power2.out",
+    stagger: 0.5
+});
+
