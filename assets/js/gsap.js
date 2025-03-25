@@ -211,20 +211,7 @@ gsap.from('.anim-footer', {
     ease: "power2.out",
     stagger: 0.5,
     scrollTrigger: {
-        trigger: '.blog1-card',
-        start: "top 80%",
-        toggleActions: "play none none reverse"
-    }
-});
-
-gsap.from('.testimonial4-card', {
-    opacity: 0,
-    y: 50, 
-    duration: 1,
-    ease: "power2.out",
-    stagger: 0.5,
-    scrollTrigger: {
-        trigger: '.blog1-card',
+        trigger: '.anim-footer',
         start: "top 80%",
         toggleActions: "play none none reverse"
     }
