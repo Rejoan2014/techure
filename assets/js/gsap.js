@@ -222,11 +222,17 @@ gsap.from('.main-menu > ul > li', {
     ease: "power2.out",
     stagger: 0.5
 });
-gsap.from('.header-button', {
-    opacity: 0,
-    y: 50,
-    duration: .5,
-    ease: "power2.out",
-    stagger: 0.5
-});
 
+gsap.from(".hero-thumb__shape1, .hero-thumb__shape2", {
+    y: -100, 
+    opacity: 0,
+    duration: 0.1, 
+    delay:0,
+    ease: "power2.out", 
+    stagger: 1,
+    scrollTrigger: {
+        trigger: ".hero-thumb", 
+        start: "top 80%",
+        toggleActions: "play none none reverse"
+    }
+});
