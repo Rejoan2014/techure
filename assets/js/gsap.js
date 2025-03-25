@@ -230,18 +230,6 @@ gsap.from('.testimonial4-card', {
     }
 });
 
-gsap.from('.story-brandLogo-slider__thumb', {
-    opacity: 0,
-    y: 50, 
-    duration: 1,
-    ease: "power2.out",
-    stagger: 0.5,
-    scrollTrigger: {
-        trigger: '.blog1-card',
-        start: "top 80%",
-        toggleActions: "play none none reverse"
-    }
-});
 
 gsap.to(".rotate360", {
     duration: 6,
