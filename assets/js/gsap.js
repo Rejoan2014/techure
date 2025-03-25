@@ -2,8 +2,8 @@ gsap.utils.toArray('.fade-up').forEach((element) => {
     gsap.from(element, {
         y: -30,
         opacity: 0, 
-        duration: 0.5, 
-        stagger: 0.3, 
+        duration: 1, 
+        stagger: 0.5, 
         scrollTrigger: {
             trigger: element,
             start: "top 80%", 
@@ -47,6 +47,7 @@ gsap.utils.toArray('.fade-btn').forEach((element) => {
     });
 });
 
+// Zoom from Y position
 gsap.utils.toArray('.fadeInUpZoom').forEach((element) => {
     gsap.from(element, {
         y: 20,
@@ -62,7 +63,8 @@ gsap.utils.toArray('.fadeInUpZoom').forEach((element) => {
     });
 });
 
-gsap.utils.toArray('.fadeInScale').forEach((element) => {
+// Zoom from initial position
+gsap.utils.toArray('.fadeInScale').forEach((element) => {  
     gsap.from(element, {
         opacity: 0,
         scale: 0.8,
@@ -121,8 +123,6 @@ gsap.utils.toArray('.slide-leftToRight').forEach((element) => {
         }
     });
 });
-
-
 
 
 
