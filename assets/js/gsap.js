@@ -204,3 +204,11 @@ gsap.from('.blog1-card', {
     }
 });
 
+gsap.to(".rotate360", {
+    duration: 6,
+    rotate: 360,
+    ease: "linear",
+    repeat: -1,
+    yoyo: false,
+    repeatDelay: 0 
+});
