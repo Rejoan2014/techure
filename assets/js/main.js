@@ -310,27 +310,27 @@
     }
 
     // Initialize Swipers on page load
-    var swiperInstances = [];
-    $(".global-slider").each(function () {
-      var sliderContainer = $(this);
-      var swiperInstance = initializeSwiper(sliderContainer);
-      swiperInstances.push(swiperInstance);
-    });
+    // var swiperInstances = [];
+    // $(".global-slider").each(function () {
+    //   var sliderContainer = $(this);
+    //   var swiperInstance = initializeSwiper(sliderContainer);
+    //   swiperInstances.push(swiperInstance);
+    // });
 
-    // Bootstrap tab show event
-    $('a[data-toggle="tab"]').on("shown.bs.tab", function (e) {
-      var targetTab = $(e.target).attr("href");
-      $(targetTab)
-        .find(".global-slider")
-        .each(function () {
-          var sliderContainer = $(this);
-          if (!sliderContainer[0].swiper) {
-            initializeSwiper(sliderContainer);
-          } else {
-            sliderContainer[0].swiper.update();
-          }
-        });
-    });
+    // // Bootstrap tab show event
+    // $('a[data-toggle="tab"]').on("shown.bs.tab", function (e) {
+    //   var targetTab = $(e.target).attr("href");
+    //   $(targetTab)
+    //     .find(".global-slider")
+    //     .each(function () {
+    //       var sliderContainer = $(this);
+    //       if (!sliderContainer[0].swiper) {
+    //         initializeSwiper(sliderContainer);
+    //       } else {
+    //         sliderContainer[0].swiper.update();
+    //       }
+    //     });
+    // });
 
     // Add click event handlers for external slider arrows based on data attributes
     $("[data-slider-prev], [data-slider-next]").on("click", function () {
